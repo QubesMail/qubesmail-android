@@ -1,4 +1,4 @@
-# Thunderbird for Android — Incident Response Plan
+# QubesMail for Android — Incident Response Plan
 
 This template that will help guide you through the process of handling security incidents and investigations.
 
@@ -15,7 +15,7 @@ Each phase should be completed before moving to the next.
 
 ## Guidance
 
-- [Vulnerability Reporting Form](https://github.com/thunderbird/thunderbird-android/security/advisories/new) (see SECURITY.md)
+- [Vulnerability Reporting Form](https://github.com/qubesmail/qubesmail-android/security/advisories/new) (see SECURITY.md)
   - Note: Vulnerability Reports include CVSS scoring calculator
 - The [CIA triad](https://www.energy.gov/femp/operational-technology-cybersecurity-energy-systems#cia) is used to evaluate security risks. Every vulnerability should be assessed against these principles:
   - Confidentiality
@@ -39,7 +39,7 @@ _In this section, summarize the report, steps to recreate, mitigating factors, a
 _Example:_
 
 _We received a report of a crash triggered by malformed S/MIME messages._
-- _Verified on Android 15 with Thunderbird 13.0_
+- _Verified on Android 15 with QubesMail 13.0_
 - _Requires custom-crafted email and user interaction_
 - _See sample email link for recreation_
 - _Potential Impact: Denial-of-service and possible memory corruption_
@@ -62,7 +62,7 @@ _We received a report of a crash triggered by malformed S/MIME messages._
 - What is the severity? `Low|Moderate|High|Critical`
 - Vulnerability was introduced on: `YYYY-MM-DD`
 - Pull request where vulnerability was introduced? `<url>`
-- Versions of Thunderbird affected: `<#.#>, ...`
+- Versions of QubesMail affected: `<#.#>, ...`
 
 ---
 
@@ -128,7 +128,7 @@ _We will notify users with our findings on this vulnerability, provide instructi
 
 _We will notify via:_
 - _Release notes_
-- _Thunderbird blog post (if high severity)_
+- _QubesMail blog post (if high severity)_
 
 ### Tasks
 
@@ -156,14 +156,14 @@ _We are providing a patch to the MIME parsing logic to fix the vulnerability. We
 
 _We will notify via:_
 - _CVE_
-- _Thunderbird for Android Security Advisory_
+- _QubesMail for Android Security Advisory_
 - _Release notes_
-- _Thunderbird blog post (if high severity)_
+- _QubesMail blog post (if high severity)_
 
 ### Tasks
 
 - [ ] Request CVE assignment. Reach out to Mozilla Security Team Members Tom Ritter and Dan Veditz with security@mozilla.org as the back-up.
-- [ ] Publish advisory to [Thunderbird for Android Security Advisories](https://github.com/thunderbird/thunderbird-android/security/advisories)
+- [ ] Publish advisory to [QubesMail for Android Security Advisories](https://github.com/qubesmail/qubesmail-android/security/advisories)
 - [ ] Update release notes
 - [ ] Optional blog post
 

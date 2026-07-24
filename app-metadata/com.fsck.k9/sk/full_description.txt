@@ -20,5 +20,5 @@ Ak máte problémy s aplikáciou K-9 Mail, požiadajte o pomoc v našom <a href=
 <b>Chcete pomôcť?</b>
 
 K-9 Mail je projekt vyvinutý komunitou. Ak máte záujem pomôcť s vylepšením aplikácie, pridajte sa k nám!
-Náš systém sledovania chýb, zdrojový kód a wiki nájdete na adrese <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Náš systém sledovania chýb, zdrojový kód a wiki nájdete na adrese <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Vždy radi privítame nových vývojárov, dizajnérov, tvorcov dokumentácie, prekladateľov, analytikov chýb a priateľov.

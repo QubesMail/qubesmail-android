@@ -1,6 +1,6 @@
-# Change Shared Modules package to `net.thunderbird`
+# Change Shared Modules package to `net.qubesmail`
 
-- Issue: [#9012](https://github.com/thunderbird/thunderbird-android/issues/9012)
+- Issue: [#9012](https://github.com/qubesmail/qubesmail-android/issues/9012)
 
 ## Status
 
@@ -25,22 +25,22 @@ We decided to rename the base package in all shared modules from `app.k9mail` an
 
 Specifically:
 
-- All Kotlin/Java packages in shared modules will be refactored to use `net.thunderbird` as the base
-- This must not affect the application IDs or packages of `app-thunderbird` or `app-kmail`, which will remain as-is
+- All Kotlin/Java packages in shared modules will be refactored to use `net.qubesmail` as the base
+- This must not affect the application IDs or packages of `app-qubesmail` or `app-kmail`, which will remain as-is
 - All references, imports, and configuration references will be updated accordingly
 - Tests, resources, and Gradle module settings will be adjusted to match the new package structure
 
-This change will establish a clearer identity for the shared code, align with Thunderbird's branding, and prepare the
+This change will establish a clearer identity for the shared code, align with QubesMail's branding, and prepare the
 project for cross-platform development.
 
 ## Outcomes
 
 ### Positive Outcomes
 
-- Shared code reflects Thunderbird branding and identity
+- Shared code reflects QubesMail branding and identity
 - Reduces confusion when navigating codebase shared by both apps
 - Sets the foundation for cross-platform compatibility and future modularization
-- Helps reinforce long-term direction of the project toward Thunderbird
+- Helps reinforce long-term direction of the project toward QubesMail
 
 ### Negative Outcomes
 

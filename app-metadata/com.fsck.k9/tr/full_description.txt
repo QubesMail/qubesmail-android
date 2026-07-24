@@ -20,5 +20,5 @@ K-9 Posta ile ilgili sorun yaşıyorsanız <a href="https://forum.k9mail.app">de
 <b>Yardım etmek ister misiniz?</b>
 
 K-9 Posta topluluk tarafından geliştirilen bir projedir. Uygulamayı geliştirmemizew yardım etmek isterseniz lütfen aramıza katılın!
-Hata izleyicimizi, kaynak kodlarımızı ve wiki sayfamızı <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> adresinde bulabilirsiniz.
+Hata izleyicimizi, kaynak kodlarımızı ve wiki sayfamızı <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> adresinde bulabilirsiniz.
 Yeni geliştiricileri, tasarımcıları, belgeleyicileri, çevirmenleri, hata takipçilerini ve arkadaşlarımızı aramızda görmekten her zaman mutluluk duyarız.

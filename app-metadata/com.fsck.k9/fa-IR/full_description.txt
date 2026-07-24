@@ -20,5 +20,5 @@
 <b>می‌خواهید کمک کنید؟</b>
 
 نامهٔ کی۹ پروژه‌ای با توسعهٔ اجتماعی است. اگر به بهبود برنامه علاقه‌مندید لطفاً به ما بپیوندید!
-می‌توانید مشکل‌ها، کد مبدأ و ویکیمان را در <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> دنبال کنید.
+می‌توانید مشکل‌ها، کد مبدأ و ویکیمان را در <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> دنبال کنید.
 همواره خوشحال می‌شویم که از توسعه‌دهندگان، طراحان، مستندنویسان، مترجمان، جویندگان مشکل و دوستان جدید استقبال کنیم.

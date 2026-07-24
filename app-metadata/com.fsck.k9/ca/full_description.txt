@@ -20,5 +20,5 @@ Si teniu problemes amb el K-9 Mail, demaneu ajuda al nostre <a href="https://for
 <b>Voleu ajudar?</b>
 
 El K-9 Mail és un projecte desenvolupat per la comunitat. Si esteu interessat a ajudar a millorar l'aplicació, uniu-vos a nosaltres!
-Podeu trobar el nostre rastrejador d'errors, el codi font i la wiki a <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Podeu trobar el nostre rastrejador d'errors, el codi font i la wiki a <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Sempre estem encantats de donar la benvinguda a nous desenvolupadors, dissenyadors, documentalistes, traductors, triadors d'errors i amics.

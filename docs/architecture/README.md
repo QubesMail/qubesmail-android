@@ -63,7 +63,7 @@ See [API Module](module-structure.md#-api-module) and
 
 ### Clean Architecture
 
-Thunderbird for Android uses **Clean Architecture** with three main layers (UI, domain, and data) to break down complex
+QubesMail for Android uses **Clean Architecture** with three main layers (UI, domain, and data) to break down complex
 feature implementation into manageable components. Each layer has a specific responsibility:
 
 ```mermaid
@@ -338,7 +338,7 @@ Cross-cutting concerns are aspects of the application that affect multiple featu
 individually for every feature. These concerns require consistent implementation throughout the codebase to ensure
 maintainability an reliability.
 
-In Thunderbird for Android, several cross-cutting concerns are implemented as dedicated core modules to provide
+In QubesMail for Android, several cross-cutting concerns are implemented as dedicated core modules to provide
 standardized solutions that can be reused across the application:
 
 - **⚠️ Error Handling**: Comprehensive error handling (`core/outcome`) transforms exceptions into domain-specific errors and provides user-friendly feedback.

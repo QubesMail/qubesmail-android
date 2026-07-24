@@ -81,7 +81,7 @@ Example `<app>.<releaseType>.signing.properties` file:
 
 ### Create release on GitHub
 
-1. Go to https://github.com/thunderbird/thunderbird-android/tags and select the appropriate tag
+1. Go to https://github.com/qubesmail/qubesmail-android/tags and select the appropriate tag
 2. Click "Create release from tag"
 3. Fill out the form
    - Click "Generate release notes"
@@ -173,7 +173,7 @@ That way the new release won't contain any changes that weren't exposed to user 
 
 ### Create release on GitHub
 
-1. Go to https://github.com/thunderbird/thunderbird-android/tags and select the appropriate tag
+1. Go to https://github.com/qubesmail/qubesmail-android/tags and select the appropriate tag
 2. Click "Create release from tag"
 3. Fill out the form
    - Click "Generate release notes"

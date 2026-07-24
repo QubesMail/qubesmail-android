@@ -1,6 +1,6 @@
 # 🔍 Code Quality Guide
 
-This document provides comprehensive guidelines for maintaining high code quality in the Thunderbird for Android
+This document provides comprehensive guidelines for maintaining high code quality in the QubesMail for Android
 project. Following these guidelines ensures that the codebase remains:
 
 - **Maintainable**: Easy to understand, modify, and extend
@@ -73,7 +73,7 @@ Detekt checks for:
 
 The project's Detekt configuration is defined in the `config/detekt/detekt.yml` file. This file specifies which rules
 to apply and their severity levels. The detekt plugin is configured in the
-`build-plugin/src/main/kotlin/thunderbird.quality.detekt.gradle.kts` file.
+`build-plugin/src/main/kotlin/qubesmail.quality.detekt.gradle.kts` file.
 
 ### Spotless
 
@@ -96,7 +96,7 @@ Spotless enforces:
 #### Configuration
 
 The project's Spotless plugin is configured in the
-`build-plugin/src/main/kotlin/thunderbird.quality.spotless.gradle.kts` file. We use ktlint for Kotlin formatting.
+`build-plugin/src/main/kotlin/qubesmail.quality.spotless.gradle.kts` file. We use ktlint for Kotlin formatting.
 The rules are defined in the `.editorconfig` file and as editorconfig overrides in the Spotless configuration.
 
 ```kotlin

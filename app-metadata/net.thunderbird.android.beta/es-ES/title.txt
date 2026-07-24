@@ -1,1 +1,1 @@
-Thunderbird; beta para pruebas
+QubesMail; beta para pruebas

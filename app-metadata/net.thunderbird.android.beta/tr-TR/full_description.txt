@@ -1,10 +1,10 @@
-Thunderbird Beta'yı indirerek, en son özelliklere ve hata düzeltmelerine resmi sürüm yayımlanmadan önce erişebilir ve bir sonraki Thunderbird sürümünü iyileştirmemize yardım edebilirsiniz. Testleriniz ve geribildirimleriniz bizim için önemli. Lütfen karşılaştığınız hataları ve pürüzleri bildirin, düşüncelerinizi bizimle paylaşın!
+QubesMail Beta'yı indirerek, en son özelliklere ve hata düzeltmelerine resmi sürüm yayımlanmadan önce erişebilir ve bir sonraki QubesMail sürümünü iyileştirmemize yardım edebilirsiniz. Testleriniz ve geribildirimleriniz bizim için önemli. Lütfen karşılaştığınız hataları ve pürüzleri bildirin, düşüncelerinizi bizimle paylaşın!
 
-Hata izleyicimizi, kaynak kodlarımızı ve wiki'mizi <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> adresinde bulabilirsiniz.
+Hata izleyicimizi, kaynak kodlarımızı ve wiki'mizi <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> adresinde bulabilirsiniz.
 
-Yeni geliştiricilere, tasarımcılara, belgeleyicilere, çevirmenlere, hata ayıklamacılara ve dostlara her zaman kapımız açık. Aramıza katılmak için <a href="https://thunderbird.net/participate">https://thunderbird.net/participate</a> adresini ziyaret edin.
+Yeni geliştiricilere, tasarımcılara, belgeleyicilere, çevirmenlere, hata ayıklamacılara ve dostlara her zaman kapımız açık. Aramıza katılmak için <a href="https://qubesmail.net/participate">https://qubesmail.net/participate</a> adresini ziyaret edin.
 
-Thunderbird güçlü ve gizlilik odaklı bir e-posta uygulamasıdır. Maksimum verimlilik için Birleşik Gelen Kutusu ile çok sayıda e-posta hesabınızı tek uygulamadan zahmetsizce yönetebilirsiniz. Açık kaynak teknolojisi üzerine inşa edilen ve özel bir geliştirici ekibinin yanı sıra gönüllüler tarafından desteklenen Thunderbird, kişisel verilerinize asla ticari bir gözle bakmaz. Yalnızca kullanıcılarımızın finansal katkılarıyla desteklenen Thunderbird'de e-postalarınızın arasına karışmış reklamlar görmek zorunda değilsiniz.
+QubesMail güçlü ve gizlilik odaklı bir e-posta uygulamasıdır. Maksimum verimlilik için Birleşik Gelen Kutusu ile çok sayıda e-posta hesabınızı tek uygulamadan zahmetsizce yönetebilirsiniz. Açık kaynak teknolojisi üzerine inşa edilen ve özel bir geliştirici ekibinin yanı sıra gönüllüler tarafından desteklenen QubesMail, kişisel verilerinize asla ticari bir gözle bakmaz. Yalnızca kullanıcılarımızın finansal katkılarıyla desteklenen QubesMail'de e-postalarınızın arasına karışmış reklamlar görmek zorunda değilsiniz.
 
 <b>Neler yapabilirsiniz?</b>
 <ul>
@@ -17,13 +17,13 @@ Thunderbird güçlü ve gizlilik odaklı bir e-posta uygulamasıdır. Maksimum v
 
 <b>Uyumluluk</b>
 <ul>
-  <li>Thunderbird, IMAP ve POP3 protokollerini destekler. Gmail, Outlook, Yahoo Mail ve iCloud da dahil olmak üzere çok sayıda e-posta sağlayıcısıyla uyumludur.</li>
+  <li>QubesMail, IMAP ve POP3 protokollerini destekler. Gmail, Outlook, Yahoo Mail ve iCloud da dahil olmak üzere çok sayıda e-posta sağlayıcısıyla uyumludur.</li>
 </ul>
 
-<b>Neden Thunderbird kullanmalısınız?</b>
+<b>Neden QubesMail kullanmalısınız?</b>
 <ul>
-  <li>20 yıldan uzun süredir e-posta dünyasının güvenilir ismi kabul edilen Thunderbird artık Android'de.</li>
-  <li>Thunderbird tamamen kullanıcılarımızın bağışlarıyla finanse ediliyor. Kişisel verilerinizi toplamıyoruz. Siz "ürün" değilsiniz.</li>
+  <li>20 yıldan uzun süredir e-posta dünyasının güvenilir ismi kabul edilen QubesMail artık Android'de.</li>
+  <li>QubesMail tamamen kullanıcılarımızın bağışlarıyla finanse ediliyor. Kişisel verilerinizi toplamıyoruz. Siz "ürün" değilsiniz.</li>
   <li>Verimliliğe sizin kadar önem veren bir ekip tarafından geliştirildi. Uygulamada minimum zaman harcayıp maksimum fayda elde etmenizi istiyoruz.</li>
   <li>Dünyanın dört bir yanındaki gönüllüler tarafından 20'den fazla dile çevrildi.</li>
   <li>Mozilla Vakfının alt kuruluşu MZLA Technologies Corporation tarafından destekleniyor.</li>
@@ -31,7 +31,7 @@ Thunderbird güçlü ve gizlilik odaklı bir e-posta uygulamasıdır. Maksimum v
 
 <b>Açık Kaynak ve Topluluk</b>
 <ul>
-  <li>Thunderbird özgür ve açık kaynaklıdır; yani kodları serbestçe görüntülenebilir, değiştirilebilir, kullanılabilir ve paylaşılabilir. Lisansı, sonsuza kadar özgür kalmasını sağlar. Thunderbird binlerce gönüllünün size armağınıdır.</li>
-  <li>Thunderbird'ü şeffaf bir şekilde geliştiriyor, gelişmeleri blogumuzda ve e-posta listelerimizde düzenli olarak paylaşıyoruz.</li>
-  <li>Teknik desteği topluluğumuz ele alıyor. İhtiyacınız olan cevapları gönüllülerimizden alabilir veya siz de katkıda bulunabilirsiniz. Soruları yanıtlayabilir, uygulamayı dilinize çevirebilir, arkadaşlarınıza ve ailenize Thunderbird'den bahsedebilirsiniz.</li>
+  <li>QubesMail özgür ve açık kaynaklıdır; yani kodları serbestçe görüntülenebilir, değiştirilebilir, kullanılabilir ve paylaşılabilir. Lisansı, sonsuza kadar özgür kalmasını sağlar. QubesMail binlerce gönüllünün size armağınıdır.</li>
+  <li>QubesMail'ü şeffaf bir şekilde geliştiriyor, gelişmeleri blogumuzda ve e-posta listelerimizde düzenli olarak paylaşıyoruz.</li>
+  <li>Teknik desteği topluluğumuz ele alıyor. İhtiyacınız olan cevapları gönüllülerimizden alabilir veya siz de katkıda bulunabilirsiniz. Soruları yanıtlayabilir, uygulamayı dilinize çevirebilir, arkadaşlarınıza ve ailenize QubesMail'den bahsedebilirsiniz.</li>
 </ul>

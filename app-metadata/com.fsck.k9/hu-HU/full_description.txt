@@ -20,5 +20,5 @@ Ha problémája akad a K-9 Mail használatával, kérjen segítséget a <a href=
 <b>Segítene?</b>
 
 A K-9 Mail egy közösségi fejlesztésű projekt. Ha segítene az alkalmazás tökéletesítésében, akkor csatlakozzon hozzánk!
-A hibakövetőnket, a forráskódunkat és a wikinket megtalálja a <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> oldalon.
+A hibakövetőnket, a forráskódunkat és a wikinket megtalálja a <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> oldalon.
 Mindig örömmel várjuk az új fejlesztőket, dizájnereket, dokumentálókat, fordítókat, hibakezelőket és barátokat.

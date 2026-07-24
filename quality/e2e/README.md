@@ -32,10 +32,10 @@ Run all commands from the `quality/e2e` directory.
 
 Each script targets a specific build variant:
 
-- `launch_tfa_debug.sh` (Thunderbird Debug)
-- `launch_tfa_daily.sh` (Thunderbird Daily)
-- `launch_tfa_beta.sh` (Thunderbird Beta)
-- `launch_tfa_release.sh` (Thunderbird Release)
+- `launch_tfa_debug.sh` (QubesMail Debug)
+- `launch_tfa_daily.sh` (QubesMail Daily)
+- `launch_tfa_beta.sh` (QubesMail Beta)
+- `launch_tfa_release.sh` (QubesMail Release)
 - `launch_k9_debug.sh` (K-9 Mail Debug)
 - `launch_k9_release.sh` (K-9 Mail Release)
 

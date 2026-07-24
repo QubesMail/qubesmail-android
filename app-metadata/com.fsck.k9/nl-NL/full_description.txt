@@ -20,5 +20,5 @@ Als u problemen hebt met K-9 Mail, vraag dan om hulp in ons <a href="https://for
 <b>Wilt u helpen?</b>
 
 K-9 Mail is een door de gemeenschap ontwikkeld project. Als u geïnteresseerd bent om te helpen de app te verbeteren, doe dan mee!
-U kunt onze bugtracker, broncode en wiki vinden op <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+U kunt onze bugtracker, broncode en wiki vinden op <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Het doet ons altijd plezier om nieuwe ontwikkelaars, ontwerpers, documentalisten, vertalers, foutanalisten en vrienden te verwelkomen.

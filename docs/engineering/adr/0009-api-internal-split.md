@@ -1,7 +1,7 @@
 # Feature/Core API/Internal split and dependency rules
 
-- Issue: [#10197](https://github.com/thunderbird/thunderbird-android/issues/10197)
-- Pull Request: [#10198](https://github.com/thunderbird/thunderbird-android/pull/10198)
+- Issue: [#10197](https://github.com/qubesmail/qubesmail-android/issues/10197)
+- Pull Request: [#10198](https://github.com/qubesmail/qubesmail-android/pull/10198)
 
 ## Status
 
@@ -9,7 +9,7 @@
 
 ## Context
 
-Thunderbird for Android uses a modular architecture. Many feature and core areas are split into `api` (public contracts)
+QubesMail for Android uses a modular architecture. Many feature and core areas are split into `api` (public contracts)
 and `impl` (implementation) modules, e.g. `:feature:account:settings:api` and `:feature:account:settings:impl`.
 
 Over time, the main friction was ambiguity in naming and ownership:
@@ -63,30 +63,30 @@ Notes for core modules:
 
 ### Package naming rules
 
-- For features, in `:feature:*:api`, use `net.thunderbird.feature.<area>[.<subarea>]`, e.g.:
-  `net.thunderbird.feature.account.settings`, `net.thunderbird.feature.mail.message.reader`.
+- For features, in `:feature:*:api`, use `net.qubesmail.feature.<area>[.<subarea>]`, e.g.:
+  `net.qubesmail.feature.account.settings`, `net.qubesmail.feature.mail.message.reader`.
 - For features, in `:feature:*:internal`, mirror the API package structure but place all implementation under an
-  `.internal` segment, e.g.: `net.thunderbird.feature.account.settings.internal`,
-  `net.thunderbird.feature.mail.message.reader.internal.data`, `net.thunderbird.feature.mail.message.reader.internal.domain`.
-- For core, in `:core:*:api`, use `net.thunderbird.core.<area>[.<subarea>]`, e.g.: `net.thunderbird.core.network`.
+  `.internal` segment, e.g.: `net.qubesmail.feature.account.settings.internal`,
+  `net.qubesmail.feature.mail.message.reader.internal.data`, `net.qubesmail.feature.mail.message.reader.internal.domain`.
+- For core, in `:core:*:api`, use `net.qubesmail.core.<area>[.<subarea>]`, e.g.: `net.qubesmail.core.network`.
 - For core, in `:core:*:internal`, mirror the API package structure and place implementation under `.internal`, e.g.:
-  `net.thunderbird.core.network.internal`, `net.thunderbird.core.crypto.internal`.
+  `net.qubesmail.core.network.internal`, `net.qubesmail.core.crypto.internal`.
 - Multiple variants (several implementations of the same contract): reflect the module qualifier after the `.internal`
   segment.
   - Mapping: `:…:internal-<variant>` → package `…internal.<variant>`.
   - Feature examples:
     - Module `:feature:mail:message:export:internal-eml` → package root
-      `net.thunderbird.feature.mail.message.export.internal.eml` (e.g., `…internal.eml.data`, `…internal.eml.domain`).
+      `net.qubesmail.feature.mail.message.export.internal.eml` (e.g., `…internal.eml.data`, `…internal.eml.domain`).
     - If a PDF exporter exists: `:feature:mail:message:export:internal-pdf` →
-      `net.thunderbird.feature.mail.message.export.internal.pdf`.
+      `net.qubesmail.feature.mail.message.export.internal.pdf`.
   - Core examples:
-    - Module `:core:network:internal-okhttp` → `net.thunderbird.core.network.internal.okhttp`.
-    - Module `:core:crypto:internal-bouncycastle` → `net.thunderbird.core.crypto.internal.bouncycastle`.
+    - Module `:core:network:internal-okhttp` → `net.qubesmail.core.network.internal.okhttp`.
+    - Module `:core:crypto:internal-bouncycastle` → `net.qubesmail.core.crypto.internal.bouncycastle`.
   - Keep variant tokens lowercase and alphanumeric. Use dot separators for dimension/value patterns (see below). Avoid
     kebab-case in package names.
 - Multi-dimension variants: when a variant expresses a dimension and a value, prefer `internal.<dimension>.<value>`.
-  - Examples: `net.thunderbird.core.storage.internal.database.sqlite`,
-    `net.thunderbird.feature.search.internal.engine.lucene`.
+  - Examples: `net.qubesmail.core.storage.internal.database.sqlite`,
+    `net.qubesmail.feature.search.internal.engine.lucene`.
   - Prefer at most two levels under `.internal` for the variant part to keep packages readable.
 
 > [!NOTE]

@@ -1,6 +1,6 @@
 # 🤝 Contribution Workflow
 
-The contribution workflow for the Thunderbird for Android project explains the process of contributing code, from
+The contribution workflow for the QubesMail for Android project explains the process of contributing code, from
 finding an issue to getting your pull request merged.
 
 ## ✅ Quick Workflow
@@ -25,20 +25,20 @@ finding an issue to getting your pull request merged.
 
 Before starting work, find an appropriate issue to work on:
 
-- Browse the [GitHub Issues](https://github.com/thunderbird/thunderbird-android/issues) for open issues
-- Prefer issues labeled [status: help wanted](https://github.com/thunderbird/thunderbird-android/labels/status%3A%20help%20wanted)
-  or [good first issue](https://github.com/thunderbird/thunderbird-android/labels/good%20first%20issue) if you're new
+- Browse the [GitHub Issues](https://github.com/qubesmail/qubesmail-android/issues) for open issues
+- Prefer issues labeled [status: help wanted](https://github.com/qubesmail/qubesmail-android/labels/status%3A%20help%20wanted)
+  or [good first issue](https://github.com/qubesmail/qubesmail-android/labels/good%20first%20issue) if you're new
   to the project
-- Do not take issues labeled [tb-team](https://github.com/thunderbird/thunderbird-android/labels/tb-team); they are reserved
+- Do not take issues labeled [tb-team](https://github.com/qubesmail/qubesmail-android/labels/tb-team); they are reserved
   for maintainers
-- Avoid issues labeled [unconfirmed](https://github.com/thunderbird/thunderbird-android/labels/unconfirmed) as they are not yet ready for contributions
+- Avoid issues labeled [unconfirmed](https://github.com/qubesmail/qubesmail-android/labels/unconfirmed) as they are not yet ready for contributions
 
 ### Requesting New Features / Ideas
 
 We don’t track new ideas or feature requests in GitHub Issues. Mozilla Connect is where feature proposals, product
 decisions, and larger design conversations happen.
 
-- Start a discussion in [Mozilla Connect - Ideas](https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird%20android)
+- Start a discussion in [Mozilla Connect - Ideas](https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/qubesmail%20android)
 - Once a feature is accepted and work is planned, maintainers will create the corresponding GitHub issue(s).
 
 ### Working From GitHub Issues
@@ -63,7 +63,7 @@ External contributors should start from existing confirmed or planned issues:
 
 If there is no matching issue:
 
-- New feature ideas belong in [Mozilla Connect - Ideas](https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird%20android), not GitHub Issues.
+- New feature ideas belong in [Mozilla Connect - Ideas](https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/qubesmail%20android), not GitHub Issues.
 - Bugs should be reported with the GitHub bug template.
 - For technical work related to an existing issue, ask in that issue whether the contribution fits the current scope.
 - If there is no related issue and the work is not a bug or Mozilla Connect feature idea, use the
@@ -76,7 +76,7 @@ Maintainers decide whether new GitHub Feature Issues, GitHub Task Issues, or Git
 
 If you’ve found a bug that’s not yet tracked:
 
-- Open a [new GitHub issue](https://github.com/thunderbird/thunderbird-android/issues/new/choose)
+- Open a [new GitHub issue](https://github.com/qubesmail/qubesmail-android/issues/new/choose)
 - Use the bug template and provide detailed reproduction steps.
 
 ### Discussing Your Plan
@@ -91,7 +91,7 @@ Before coding:
 
 To contribute code, you'll need to work with your own fork of the repository:
 
-1. Go to the [Thunderbird for Android repository](https://github.com/thunderbird/thunderbird-android)
+1. Go to the [QubesMail for Android repository](https://github.com/qubesmail/qubesmail-android)
 2. Click the **Fork** button in the top-right corner
 3. Select your GitHub account as the destination for the fork
 4. Wait for GitHub to create your fork
@@ -102,13 +102,13 @@ After forking, clone your fork to your local machine:
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR-USERNAME/thunderbird-android.git
+git clone https://github.com/YOUR-USERNAME/qubesmail-android.git
 
 # Navigate to the project directory
-cd thunderbird-android
+cd qubesmail-android
 
 # Add the upstream repository as a remote to your fork
-git remote add upstream https://github.com/thunderbird/thunderbird-android.git
+git remote add upstream https://github.com/qubesmail/qubesmail-android.git
 ```
 
 Replace `YOUR-USERNAME` with your GitHub username.
@@ -206,10 +206,10 @@ git push --force-with-lease origin your-branch-name
 
 To submit your changes for review:
 
-1. Go to the [Thunderbird for Android repository](https://github.com/thunderbird/thunderbird-android)
+1. Go to the [QubesMail for Android repository](https://github.com/qubesmail/qubesmail-android)
 2. Click **Pull requests** -> **New pull request** -> **compare across forks**
 3. Set:
-   - Base repo: `thunderbird/thunderbird-android`
+   - Base repo: `qubesmail/qubesmail-android`
    - Base branch: `main`
    - Head repo: your fork & branch
 4. Select your fork and branch as the source

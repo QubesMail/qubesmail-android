@@ -17,7 +17,7 @@
 /* Themes */
 
 .dark {
-    /* Thunderbird dark palette */
+    /* QubesMail dark palette */
     --bg: #0a0c10; /* near-black */
     --fg: #e5e7eb; /* gray-200 */
 
@@ -79,7 +79,7 @@
 }
 
 .light, html:not(.js) {
-    /* Thunderbird light palette */
+    /* QubesMail light palette */
     --bg: #ffffff;
     --fg: #0c1222; /* near-black navy */
 

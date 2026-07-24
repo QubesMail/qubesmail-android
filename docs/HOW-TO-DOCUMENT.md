@@ -1,6 +1,6 @@
 # How to Document
 
-This guide provides detailed instructions for contributing to and maintaining the documentation for the Thunderbird for Android project. It explains the tools used, the structure of the documentation, and guidelines for creating and editing content.
+This guide provides detailed instructions for contributing to and maintaining the documentation for the QubesMail for Android project. It explains the tools used, the structure of the documentation, and guidelines for creating and editing content.
 
 We use [mdbook](https://rust-lang.github.io/mdBook/) to generate the documentation. The source files for the documentation are located in the `docs/` directory.
 

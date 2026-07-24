@@ -16,7 +16,7 @@ python -m venv venv
 source venv/bin/activate
 pip install requests pynacl
 cd .signing
-python ../scripts/ci/setup_release_automation -r yourfork/thunderbird-android
+python ../scripts/ci/setup_release_automation -r yourfork/qubesmail-android
 ```
 
 You will need the following files:
@@ -36,17 +36,17 @@ You will need the following files:
 ```
 
 - `play-store-account.json` with the service account json that will do the uploads
-- `thunderbird-mobile-gh-releaser-bot.clientid.txt` as a simple file with the client ID of the releaser bot (you can skip this to use GitHub Actions as the user)
-- `thunderbird-mobile-gh-releaser-bot.pem` with the private key of the releaser bot
+- `qubesmail-mobile-gh-releaser-bot.clientid.txt` as a simple file with the client ID of the releaser bot (you can skip this to use GitHub Actions as the user)
+- `qubesmail-mobile-gh-releaser-bot.pem` with the private key of the releaser bot
 
 ## Build Environments
 
 Build environments determine the configuration for the respective release channel. The following are
 available:
 
-- thunderbird_beta
-- thunderbird_daily
-- thunderbird_release
+- qubesmail_beta
+- qubesmail_daily
+- qubesmail_release
 
 The following (non-sensitive) variables have been set:
 
@@ -57,9 +57,9 @@ The following MATRIX_INCLUDES would build an apk and aab for Thunderbird, and an
 
 ```json
 [
-  { "appName": "thunderbird", "packageFormat": "apk", "packageFlavor": "foss" },
+  { "appName": "qubesmail", "packageFormat": "apk", "packageFlavor": "foss" },
   {
-    "appName": "thunderbird",
+    "appName": "qubesmail",
     "packageFormat": "bundle",
     "packageFlavor": "full"
   },
@@ -75,8 +75,8 @@ These environments contain the secrets for signing. Their names follow this patt
 
 ```text
 <appName>_<releaseType>_<packageFlavor>
-thunderbird_beta_full
-thunderbird_beta_foss
+qubesmail_beta_full
+qubesmail_beta_foss
 k9mail_beta_foss
 ```
 

@@ -61,7 +61,7 @@ If you are not a core maintainer:
    they are reserved for maintainers. Do not work on bug issues labeled `unconfirmed`; they still need maintainer
    triage. For other GitHub Bug Issues, GitHub Feature Issues, or GitHub Task Issues, discuss the scope in the issue
    and wait for a maintainer to assign the issue to you before starting.
-3. If you want to propose a **new feature**, start a discussion in [Mozilla Connect](https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird%20android). Once accepted and planned, maintainers will create the corresponding GitHub issues.
+3. If you want to propose a **new feature**, start a discussion in [Mozilla Connect](https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/qubesmail%20android). Once accepted and planned, maintainers will create the corresponding GitHub issues.
 4. If you found a **bug** that is not tracked, open a GitHub issue using the bug template.
 5. If technical work relates to an existing issue, discuss the scope in that issue before starting. Maintainers decide
    whether a new GitHub Task Issue, RFC, ADR, Technical Design, or GitHub Milestone Issue is needed.
@@ -119,8 +119,8 @@ When creating a GitHub Milestone Issue:
 
 1. Create a new GitHub issue using the [GitHub Milestone Issue template](milestone-issues/0000-milestone-issue-template.md).
 2. Select the GitHub Milestone Issue type if GitHub issue types are available.
-3. Add GitHub Milestone Issues to the [roadmap project](https://github.com/orgs/thunderbird/projects/19).
-4. Add current implementation work to the [sprint board](https://github.com/orgs/thunderbird/projects/20).
+3. Add GitHub Milestone Issues to the [roadmap project](https://github.com/orgs/qubesmail/projects/19).
+4. Add current implementation work to the [sprint board](https://github.com/orgs/qubesmail/projects/20).
 5. Set the initial project status.
 6. Link relevant resources, including GitHub issues, design artifacts, RFCs, ADRs, technical designs, and public
    planning references.

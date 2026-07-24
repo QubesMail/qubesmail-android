@@ -1,6 +1,6 @@
 # RFC 0002: Thundermail – Add an Account interim screen
 
-- Issue: [#11102](https://github.com/thunderbird/thunderbird-android/issues/11102)
+- Issue: [#11102](https://github.com/qubesmail/qubesmail-android/issues/11102)
 - Status: **Accepted**
 
 ## Summary
@@ -40,7 +40,7 @@ Welcome Screen, we first redirect them to the new "Add Account" screen.
 
 ## UI Screenshots
 
-|            Current Thunderbird Migration Screen             |       Suggestion Add Account with Thundermail lean version        |
+|            Current QubesMail Migration Screen             |       Suggestion Add Account with Thundermail lean version        |
 |-------------------------------------------------------------|-------------------------------------------------------------------|
 | <img width="70%" src="resources/tfa-migration-screen.png"/> | <img src="resources/thundermail-add-account-interim-screen.png"/> |
 

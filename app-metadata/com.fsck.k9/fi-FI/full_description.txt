@@ -20,5 +20,5 @@ Jos sinulla on ongelmia K-9 Mailin kanssa, pyydä apua <a href="https://forum.k9
 <b>Haluatko auttaa?</b>
 
 K-9 Mail on yhteisön kehittämä projekti. Jos olet kiinnostunut auttamaan sovelluksen parantamisessa, liity joukkoomme!
-Löydät vikaseurantamme, lähdekoodimme ja wikin osoitteesta <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Löydät vikaseurantamme, lähdekoodimme ja wikin osoitteesta <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Otamme aina mielellämme vastaan uusia kehittäjiä, suunnittelijoita, dokumentoijia, kääntäjiä, vikojen lajittelijat ja ystäviä.

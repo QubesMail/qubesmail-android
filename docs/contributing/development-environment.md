@@ -1,6 +1,6 @@
 # 🚀 Development Environment
 
-This guide will help you set up your development environment and get started with contributing to the Thunderbird for
+This guide will help you set up your development environment and get started with contributing to the QubesMail for
 Android project.
 
 ## 📋 Prerequisites
@@ -22,7 +22,7 @@ All contributions happen through a personal fork of the repository.
 - If you haven’t forked the project yet, see the [Contribution Workflow](contribution-workflow.md) for step-by-step instructions.
 - Once you have a fork, clone it to your machine and open it in Android Studio.
 
-1. Go to the [Thunderbird for Android repository](https://github.com/thunderbird/thunderbird-android)
+1. Go to the [QubesMail for Android repository](https://github.com/qubesmail/qubesmail-android)
 2. Click the **Fork** button in the top-right corner
 3. Create a fork under your GitHub account
 
@@ -64,7 +64,7 @@ and the command to `build` runs tests and other checks, while `assemble` only co
 ./gradlew assembleRelease
 
 # Build a specific app module
-./gradlew :app-thunderbird:assembleDebug
+./gradlew :app-qubesmail:assembleDebug
 ./gradlew :app-k9mail:assembleDebug
 
 # Build a specific library/feature module
@@ -104,7 +104,7 @@ See the [Testing Guide](testing-guide.md) for details.
 
 ## 🔍 Checking Code Quality
 
-Maintaining high code quality is essential for the long-term sustainability of the Thunderbird for Android project. The project uses several tools and practices to ensure code quality:
+Maintaining high code quality is essential for the long-term sustainability of the QubesMail for Android project. The project uses several tools and practices to ensure code quality:
 
 - **Static Analysis Tools**: Android Lint, Detekt, and Spotless
 - **Code Style Guidelines**: Kotlin style guide and project-specific conventions
@@ -143,7 +143,7 @@ See the [Android Studio Debugger Guide](https://developer.android.com/studio/deb
 
 ### Logging
 
-Use the project's core logging API `net.thunderbird.core.logging.Logger`, which is provided via dependency injection
+Use the project's core logging API `net.qubesmail.core.logging.Logger`, which is provided via dependency injection
 (Koin). Avoid logging **personally identifiable information (PII)**.
 
 Example with DI (Koin):

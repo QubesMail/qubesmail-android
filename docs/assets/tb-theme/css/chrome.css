@@ -773,7 +773,7 @@ html:not(.js) .sidebar-resize-handle {
 }
 
 
-/* Code block backgrounds aligned with Thunderbird theme */
+/* Code block backgrounds aligned with QubesMail theme */
 .light .hljs {
     background: #f6f7f6;
     color: #0c1222; 

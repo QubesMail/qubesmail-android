@@ -20,5 +20,5 @@ Kui sul on K-9 Mailiga probleeme, küsi abi meie <a href="https://forum.k9mail.a
 <b>Kas soovid aidata?</b>
 
 K-9 Mail on kogukonna arendatud projekt. Kui oled huvitatud rakenduse täiustamisest, liitu meiega!
-Meie veahalduse, lähtekoodi ja viki leiad aadressilt <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> .
+Meie veahalduse, lähtekoodi ja viki leiad aadressilt <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> .
 Meil on alati hea meel tervitada uusi arendajaid, disainereid, dokumenteerijaid, tõlkijaid, vigade otsijaid ja sõpru.

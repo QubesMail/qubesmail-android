@@ -1,7 +1,7 @@
 # 📖 Threat Modeling Guide
 
 This guide walks you through how to apply the **STRIDE** methodology for identifying and addressing security risks in
-Thunderbird’s mobile clients. Each step includes **examples** specific to Android/iOS email handling. Use it during
+QubesMail’s mobile clients. Each step includes **examples** specific to Android/iOS email handling. Use it during
 design, feature work, and release planning. Keep sessions short and focused.
 
 > [!NOTE]
@@ -32,12 +32,12 @@ issue/PR or a short doc.
 
 **What to do:**
 
-Write down what Thunderbird Mobile is, what it does, and its major features. This frames the context of your threat
+Write down what QubesMail Mobile is, what it does, and its major features. This frames the context of your threat
 model.
 
 **Example:**
 
-* **Project Name**: Thunderbird for Android
+* **Project Name**: QubesMail for Android
 * **Description**: A mobile email client providing access to IMAP/POP3/SMTP accounts with support for OAuth, local message storage, PGP/SMIME, and notifications.
 * **Key Features**: Account setup, secure login, message sync, local storage, notifications, attachments, encryption support.
 
@@ -72,7 +72,7 @@ Draw a simple diagram (use Mermaid) of the project within your chosen scope. Ide
 
 **Example (Account Authentication):**
 
-* **Actors**: User, Thunderbird app, IMAP/SMTP server, OAuth provider, Attacker, Push providers, OS keychain, other apps via Intents/Shares
+* **Actors**: User, QubesMail app, IMAP/SMTP server, OAuth provider, Attacker, Push providers, OS keychain, other apps via Intents/Shares
 * **Data Flows**:
   * User enters credentials or OAuth flow
   * App exchanges tokens with server
@@ -146,7 +146,7 @@ For each component, data flow, and interaction identified in your diagram, ask S
 | OAuth2 Login (App ↔ OAuth Provider) | Fake OAuth page via phishing/intent hijack | Intercept/alter redirect URI       | User denies consent later | Tokens/PII leaked in logs/URLs          | Provider rate limits        | App requests excessive scopes     |
 | Password Auth (App ↔ Mail/SMTP)     | MITM captures creds / server spoof         | Modify TLS session                 | Deny failed logins        | Credentials in memory/backups           | Brute-force lockouts        | App uses elevated IMAP/SMTP roles |
 | IMAP/SMTP TLS                       | Spoof certs without pinning                | Downgrade protocol/cipher          | —                         | Metadata leaks in traffic               | Connection exhaustion       | Protocol quirks abused            |
-| Local Storage                       | Malicious app pretends to be Thunderbird   | DB/file tampering on rooted device | User denies local action  | Leaks via backups/cache                 | Storage exhaustion          | Sandbox escape                    |
+| Local Storage                       | Malicious app pretends to be QubesMail   | DB/file tampering on rooted device | User denies local action  | Leaks via backups/cache                 | Storage exhaustion          | Sandbox escape                    |
 | Keystore / Keychain                 | Fake app tries to use alias                | Key misuse                         | —                         | Extraction on rooted/jailbroken devices | Keystore unavailable        | Hardware bypass                   |
 | OpenPGP / S-MIME                    | Key ownership spoofing                     | Keyring/signature tampering        | Dispute sent signatures   | Decrypted data in RAM/tmp               | Expensive crypto stalls UI  | Access other apps’ keys           |
 | Attachments & Sharing               | Malicious target app intercepts            | Temp file tampering                | —                         | World-readable URIs                     | Huge file upload stalls     | Excess file access                |
@@ -205,7 +205,7 @@ Label each threat High/Medium/Low based on likelihood and impact.
 
 ---
 
-Perfect 🚀 — here’s a **ready-to-use Markdown template file** your team can copy for any new feature or flow in Thunderbird Mobile. It includes placeholders for each section, an empty system diagram stub, and separate **Threats** and **Mitigations** tables.
+Perfect 🚀 — here’s a **ready-to-use Markdown template file** your team can copy for any new feature or flow in QubesMail Mobile. It includes placeholders for each section, an empty system diagram stub, and separate **Threats** and **Mitigations** tables.
 
 ---
 
@@ -231,7 +231,7 @@ Use this template when modeling a new feature or flow.
 
 ```mermaid
 flowchart LR
-  USER[User] --> APP[Thunderbird App]
+  USER[User] --> APP[QubesMail App]
   ATTACKER[Attacker] -.-> APP
 
   subgraph Device
@@ -283,7 +283,7 @@ flowchart LR
 
 ### 1. Project Overview
 
-* **Project Name**: Thunderbird for Android/iOS – Account Authentication
+* **Project Name**: QubesMail for Android/iOS – Account Authentication
 * **Description**: Handling account setup, login, and credential storage for IMAP/SMTP or OAuth2 providers.
 * **Key Features**: Password auth, OAuth2 flows (Google/Microsoft), token storage, secure connections.
 
@@ -295,7 +295,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  USER[User] --> APP[Thunderbird App]
+  USER[User] --> APP[QubesMail App]
   ATTACKER[Attacker] -.-> APP
 
   subgraph Device
@@ -329,7 +329,7 @@ flowchart LR
 | OAuth2 Login     | Fake OAuth page via phishing             | Redirect URI manipulation | User denies consent      | Tokens leaked in logs/URLs       | Provider rate limits  | Excessive scopes       |
 | Password Auth    | MITM server spoof                        | Modify TLS session        | User denies failed login | Credentials in memory/backups    | Brute-force lockouts  | Use of admin roles     |
 | IMAP/SMTP TLS    | Spoofed certificates                     | Downgrade attack          | —                        | Metadata leakage                 | Connection exhaustion | Protocol quirks abused |
-| Local Storage    | Malicious app pretends to be Thunderbird | DB/file tampering         | User denies local action | Backups/cache leaks              | Storage exhaustion    | Sandbox escape         |
+| Local Storage    | Malicious app pretends to be QubesMail | DB/file tampering         | User denies local action | Backups/cache leaks              | Storage exhaustion    | Sandbox escape         |
 | Keystore         | Fake app tries to access alias           | Misuse of key             | —                        | Key extraction on rooted devices | Keystore unavailable  | Hardware bypass        |
 
 ### 6. Mitigations
@@ -358,7 +358,7 @@ flowchart LR
 
 ### 1. Project Overview
 
-* **Project Name**: Thunderbird for Android/iOS – Push Notifications
+* **Project Name**: QubesMail for Android/iOS – Push Notifications
 * **Description**: Handling push notifications via FCM (Android) or APNs (iOS) to wake the app for secure fetch.
 * **Key Features**: Receive push, show notifications, fetch mail securely.
 
@@ -370,7 +370,7 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-  USER[User] --> APP[Thunderbird App]
+  USER[User] --> APP[QubesMail App]
   ATTACKER[Attacker] -.-> APP
 
   subgraph Device

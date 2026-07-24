@@ -1,6 +1,6 @@
 # 📦 Module Structure
 
-The Thunderbird for Android project is following a modularization approach, where the codebase is divided into multiple
+The QubesMail for Android project is following a modularization approach, where the codebase is divided into multiple
 distinct modules. These modules encapsulate specific functionality and can be developed, tested, and maintained
 independently. This modular architecture promotes reusability, scalability, and maintainability of the codebase.
 
@@ -49,7 +49,7 @@ API modules should follow the naming convention:
 
 ```bash
 feature:account:api
-├── src/main/kotlin/net/thunderbird/feature/account
+├── src/main/kotlin/net/qubesmail/feature/account
 │   ├── AccountManager.kt (interface)
 │   ├── Account.kt (entity)
 │   ├── AccountNavigation.kt (interface)
@@ -96,7 +96,7 @@ modules and named accordingly:
 
 ```bash
 feature:account:internal-gmail
-├── src/main/kotlin/net/thunderbird/feature/account/internal/gmail
+├── src/main/kotlin/net/qubesmail/feature/account/internal/gmail
 │   └── GmailAccountManager.kt
 ```
 
@@ -110,7 +110,7 @@ A complex feature internal module should apply **Clean Architecture** principles
 
 ```bash
 feature:account:internal
-├── src/main/kotlin/net/thunderbird/feature/account/internal
+├── src/main/kotlin/net/qubesmail/feature/account/internal
 │   ├── data/
 │   │   ├── repository/
 │   │   ├── datasource/
@@ -158,7 +158,7 @@ Testing modules should follow the naming convention:
 
 ```bash
 feature:account:testing
-├── src/main/kotlin/net/thunderbird/feature/account/testing
+├── src/main/kotlin/net/qubesmail/feature/account/testing
 │   ├── AccountTestUtils.kt
 │   └── AccountTestMatchers.kt
 ```
@@ -198,7 +198,7 @@ Fake modules should follow the naming convention:
 
 ```bash
 feature:account:fake
-├── src/main/kotlin/net/thunderbird/feature/account/fake
+├── src/main/kotlin/net/qubesmail/feature/account/fake
 │   ├── FakeAccountRepository.kt
 │   ├── FakeAccountDataSource.kt
 │   ├── InMemoryAccountStore.kt
@@ -245,7 +245,7 @@ Common modules should follow the naming convention:
 
 ```bash
 feature:account:common
-├── src/main/kotlin/net/thunderbird/feature/account/common
+├── src/main/kotlin/net/qubesmail/feature/account/common
 │   ├── AccountCommonModule.kt
 │   ├── data/
 │   │   └── InMemoryAccountStateRepository.kt
@@ -282,7 +282,7 @@ the dependencies and integration points between modules.
 graph TB
     subgraph APP[App Modules]
         direction TB
-        APP_TB["`**:app-thunderbird**<br>Thunderbird for Android`"]
+        APP_TB["`**:app-qubesmail**<br>QubesMail for Android`"]
         APP_K9["`**:app-k9mail**<br>K-9 Mail`"]
     end
 

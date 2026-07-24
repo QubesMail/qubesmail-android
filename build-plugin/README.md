@@ -18,32 +18,32 @@ module's `build.gradle.kts`.
 
 ## Convention plugins
 
-- `thunderbird.app.android` - Configures common options for Android apps
-- `thunderbird.app.android.compose` - Configures common options for Jetpack Compose, based
-  on `thunderbird.app.android`
-- `thunderbird.library.android` - Configures common options for Android libraries
-- `thunderbird.library.android.compose` - Configures common options for Jetpack Compose, based
-  on `thunderbird.library.android`
-- `thunderbird.library.jvm` - Configures common options for JVM libraries
+- `qubesmail.app.android` - Configures common options for Android apps
+- `qubesmail.app.android.compose` - Configures common options for Jetpack Compose, based
+  on `qubesmail.app.android`
+- `qubesmail.library.android` - Configures common options for Android libraries
+- `qubesmail.library.android.compose` - Configures common options for Jetpack Compose, based
+  on `qubesmail.library.android`
+- `qubesmail.library.jvm` - Configures common options for JVM libraries
 
 ## Supportive plugins
 
-- `thunderbird.dependency.check` - [Gradle Versions: Gradle plugin to discover dependency updates](https://github.com/ben-manes/gradle-versions-plugin)
+- `qubesmail.dependency.check` - [Gradle Versions: Gradle plugin to discover dependency updates](https://github.com/ben-manes/gradle-versions-plugin)
   - Use `./gradlew dependencyUpdates` to generate a dependency update report
-- `thunderbird.quality.detekt` - [Detekt - Static code analysis for Kotlin](https://detekt.dev/)
+- `qubesmail.quality.detekt` - [Detekt - Static code analysis for Kotlin](https://detekt.dev/)
   - Use `./gradlew detekt` to check for any issue and `./gradlew detektBaseline` in case you can't fix the reported
     issue.
-- `thunderbird.quality.spotless` - [Spotless - Code formatter](https://github.com/diffplug/spotless)
+- `qubesmail.quality.spotless` - [Spotless - Code formatter](https://github.com/diffplug/spotless)
   with [Ktlint - Kotlin linter and formatter](https://pinterest.github.io/ktlint/)
   - Use `./gradlew spotlessCheck` to check for any issue and `./gradlew spotlessApply` to format your code
-- `thunderbird.quality.badging` - [Android Badging Check Plugin](https://github.com/android/nowinandroid/blob/main/build-logic/convention/src/main/kotlin/com/google/samples/apps/nowinandroid/Badging.kt)
+- `qubesmail.quality.badging` - [Android Badging Check Plugin](https://github.com/android/nowinandroid/blob/main/build-logic/convention/src/main/kotlin/com/google/samples/apps/nowinandroid/Badging.kt)
   - Use `./gradlew generate{VariantName}Badging` to generate badging file
   - Use `./gradlew check{VariantName}Badging` to validate allowed badging
   - Use `./gradlew update{VariantName}Badging` to update allowed badging
 
 ## Add new build plugin
 
-Create a `thunderbird.xyz.gradle.kts` file, while `xyz` describes the new plugin.
+Create a `qubesmail.xyz.gradle.kts` file, while `xyz` describes the new plugin.
 
 If you need to access dependencies that are not yet defined in `build-plugin/build.gradle.kts` you have to:
 
@@ -52,22 +52,22 @@ If you need to access dependencies that are not yet defined in `build-plugin/bui
    1. In case of a plugin dependency use `implementation(plugin(libs.plugins.YOUR_PLUGIN_DEPENDENCY))`.
    2. Otherwise `implementation(libs.YOUR_DEPENDENCY))`.
 
-When done, add the plugin to `build-plugin/src/main/kotlin/ThunderbirdPlugins.kt`
+When done, add the plugin to `build-plugin/src/main/kotlin/QubesMailPlugins.kt`
 
 Then apply the plugin to any subproject it should be used with:
 
 ```
 plugins {
-    id(ThunderbirdPlugins.xyz)
+    id(QubesMailPlugins.xyz)
 }
 ```
 
-If the plugin is meant for the root `build.gradle.kts`, you can't use `ThunderbirdPlugins`, as it's not available to
+If the plugin is meant for the root `build.gradle.kts`, you can't use `QubesMailPlugins`, as it's not available to
 the `plugins` block. Instead use:
 
 ```
 plugins {
-    id("thunderbird.xyz")
+    id("qubesmail.xyz")
 }
 ```
 

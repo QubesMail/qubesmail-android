@@ -1,6 +1,6 @@
 # Switch from Java to Kotlin
 
-- Pull Request: [#7221](https://github.com/thunderbird/thunderbird-android/pull/7221)
+- Pull Request: [#7221](https://github.com/qubesmail/qubesmail-android/pull/7221)
 
 ## Status
 

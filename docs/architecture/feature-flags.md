@@ -15,7 +15,7 @@ If you’re making something that’s too large for a single pull request, or be
 First, a quick overview on the classes you'll be working with to create your feature flag.
 
 - `FeatureFlag`
-  - Package: `net.thunderbird.core.featureflag`
+  - Package: `net.qubesmail.core.featureflag`
   - Data class, takes a `FeatureFlagKey` and an `enabled` boolean, defaults to false
   - Example: `FeatureFlag(MessageReaderFeatureFlags.UseComposeForMessageReader)`
     - This would be set automatically to false
@@ -37,20 +37,20 @@ First, a quick overview on the classes you'll be working with to create your fea
   - K9: `single<FeatureFlagFactory> { K9FeatureFlagFactory() }`
     - `app.k9mail.featureflag` package
     - `appModule` defines it in the `K9KoinModule` file
-  - Thunderbird: `single<FeatureFlagFactory> { TbFeatureFlagFactory() }`
-    - Located in `net.thunderbird.android.featureflag` package
-    - in the `appModule` definition, `ThunderbirdKoinModule.kt`
+  - QubesMail: `single<FeatureFlagFactory> { TbFeatureFlagFactory() }`
+    - Located in `net.qubesmail.android.featureflag` package
+    - in the `appModule` definition, `QubesMailKoinModule.kt`
   - The classes implementing it will be where your feature flags "live," where you define them and where they're set.
 - `TbFeatureFlagFactory`
-  - Implementation of `FeatureFlagFactory` for the Thunderbird App
-  - Contains the feature flags for the Thunderbird app
-  - Package: `net.thunderbird.android.featureflag`
+  - Implementation of `FeatureFlagFactory` for the QubesMail App
+  - Contains the feature flags for the QubesMail app
+  - Package: `net.qubesmail.android.featureflag`
   - Different versions in different directories to define the build. Each build will use the `TbFeatureFlagFactory` from its own directory. See the "[How to Add a Feature Flag](#how-to-add-a-feature-flag)" section below to find all of the factory locations you'll have to change to create a new flag
   - Creates a flow for `getCatalog()` so updates to the flags can trigger downstream listeners/collectors
   - You can set up feature flags in specific classes, but they still have to be named individually here, for example, these are feature flags related to MessageList:
     - `FeatureFlag(MessageListFeatureFlags.UseComposeForMessageListItems, enabled = false),`
     - `FeatureFlag(MessageListFeatureFlags.EnableMessageListNewState, enabled = false),`
-      - These are both defined in the `MessageListFeatureFlags` object in the `net.thunderbird.feature.mail.message.list` package
+      - These are both defined in the `MessageListFeatureFlags` object in the `net.qubesmail.feature.mail.message.list` package
 - `K9FeatureFlagFactory`
   - Package: `app.k9mail.featureflag`
   - This is the same as the `TbFeatureFlagFactory` class, implementing the `FeatureFlagFactory` interface for the K9 app
@@ -61,7 +61,7 @@ Now that you're ready to add your own feature flag to the app, you need to answe
 
 #### Decide Where Your Feature Flag Belongs
 
-Place your feature flag in the feature you’re working on. For example, a MessageList feature flag object, `MessageListFeatureFlags`, lives in the `net.thunderbird.feature.mail.message.list` package. It’s specifically in `feature/mail/message/list/api/src/main/kotlin/net/thunderbird/feature/mail/message/list/MessageListFeatureFlags.kt`. Note that it’s placed in the api directory.
+Place your feature flag in the feature you’re working on. For example, a MessageList feature flag object, `MessageListFeatureFlags`, lives in the `net.qubesmail.feature.mail.message.list` package. It’s specifically in `feature/mail/message/list/api/src/main/kotlin/net/qubesmail/feature/mail/message/list/MessageListFeatureFlags.kt`. Note that it’s placed in the api directory.
 
 #### Make the Feature Flag
 
@@ -93,12 +93,12 @@ override fun getCatalog(): Flow<List<FeatureFlag>> = flow {
 
 Here are the locations you might have to add it to currently. However, as time goes on, we may have other build flavors and apps to add it to, so be sure to check.
 
-**For Thunderbird:**
+**For QubesMail:**
 
-- `app-thunderbird/src/release/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt`
-- `app-thunderbird/src/beta/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt`
-- `app-thunderbird/src/daily/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt`
-- `app-thunderbird/src/debug/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt`
+- `app-qubesmail/src/release/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt`
+- `app-qubesmail/src/beta/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt`
+- `app-qubesmail/src/daily/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt`
+- `app-qubesmail/src/debug/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt`
 
 **For K9 Mail:**
 

@@ -1,10 +1,10 @@
 # Preference Migration Guide
 
-This document explains how to update and migrate preferences in Thunderbird for Android.
+This document explains how to update and migrate preferences in QubesMail for Android.
 
 ## Overview
 
-Thunderbird for Android uses a dedicated SQLite database to store its preferences as key-value pairs.
+QubesMail for Android uses a dedicated SQLite database to store its preferences as key-value pairs.
 Both the database file and the primary table are named `preferences_storage`. This is managed by the
 `K9StoragePersister`.
 

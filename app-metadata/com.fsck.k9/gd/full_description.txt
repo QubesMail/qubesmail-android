@@ -20,5 +20,5 @@ Ma tha duilgheadas agad le K-9 Mail, buail air <a href="https://forum.k9mail.app
 <b>Airson taic a chumail ris a’ phròiseact?</b>
 
 ’S e pròiseact coimhearsnachd a th’ ann an K-9 Mail. Ma tha thu airson làmh-chuideachaidh a chumail rinn, siuthad!
-Chì thu tracaiche nam buga, an còd is an uici aig <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Chì thu tracaiche nam buga, an còd is an uici aig <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Tha fàilte ro luchd-leasachaidh ’s dealbhaidh, daoine a nì docamaideadh no triaghais air bugaichean, eadar-theangadairean agus caraidean an-còmhnaidh.

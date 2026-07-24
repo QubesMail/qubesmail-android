@@ -1,6 +1,6 @@
 # Releases
 
-Thunderbird for Android follows a release train model to ensure timely and predictable releases. This model allows for regular feature rollouts, stability improvements, and bug fixes.
+QubesMail for Android follows a release train model to ensure timely and predictable releases. This model allows for regular feature rollouts, stability improvements, and bug fixes.
 
 ## Branches in the Release Train Model
 
@@ -11,8 +11,8 @@ Daily builds are used for initial testing of new features and changes. Feature f
 - **Branch:** `main`
 - **Purpose:** Active development of new features and improvements
 - **Release Cadence:** Daily
-- **Audience:** Developers and highly technical users who want to test the bleeding edge of Thunderbird. Daily builds are unstable and not recommended for production use.
-- **Availability:** Daily builds are available on the Play Store internal channel. APKs are available on [ftp.mozilla.org](https://ftp.mozilla.org/pub/thunderbird-mobile/).
+- **Audience:** Developers and highly technical users who want to test the bleeding edge of QubesMail. Daily builds are unstable and not recommended for production use.
+- **Availability:** Daily builds are available on the Play Store internal channel. APKs are available on [ftp.mozilla.org](https://ftp.mozilla.org/pub/qubesmail-mobile/).
 
 ### Beta
 
@@ -23,18 +23,18 @@ After features are stabilized in Daily, they are merged into the Beta branch for
 - **Release Cadence:** Weekly with the option to skip if not needed
 - **Merge Cadence:** Every 4 weeks
 - **Audience:** Early adopters and testers. Testers are encouraged to provide error logs and help reproduce issues filed.
-- **Availability:** Beta builds are available from the [Play Store](https://play.google.com/store/apps/details?id=net.thunderbird.android.beta) and [F-Droid](https://f-droid.org/packages/net.thunderbird.android.beta).
+- **Availability:** Beta builds are available from the [Play Store](https://play.google.com/store/apps/details?id=net.qubesmail.android.beta) and [F-Droid](https://f-droid.org/packages/net.qubesmail.android.beta).
 
 ### Release
 
-This branch represents the stable version of Thunderbird. It is tested and suitable for general use. Uplifts are limited to high-impact bug fixes only.
+This branch represents the stable version of QubesMail. It is tested and suitable for general use. Uplifts are limited to high-impact bug fixes only.
 
 - **Branch:** `release`
 - **Purpose:** Stable releases
 - **Release Cadence:** Major releases every 4 weeks. Minor release 2 weeks after a major release with the option to skip if not needed.
 - **Merge Cadence:** Every 4 weeks
 - **Audience:** General users. Users may be filing bug reports or leaving reviews to express their level of satisfaction.
-- **Availability:** Release builds are available from the [Play Store](https://play.google.com/store/apps/details?id=net.thunderbird.android) and [F-Droid](https://f-droid.org/packages/net.thunderbird.android).
+- **Availability:** Release builds are available from the [Play Store](https://play.google.com/store/apps/details?id=net.qubesmail.android) and [F-Droid](https://f-droid.org/packages/net.qubesmail.android).
 
 ## Sample Release Timeline
 
@@ -63,7 +63,7 @@ A week long soft freeze occurs for the `main` branch prior to merging into the `
 
 ## Feature Flags
 
-Thunderbird for Android uses Feature Flags to disable features not yet ready for consumption.
+QubesMail for Android uses Feature Flags to disable features not yet ready for consumption.
 
 - On `main`, feature flags are enabled as soon as developers have completed all pull requests related to the feature.
 - On `beta`, feature flags remain enabled unless the feature has not been fully completed and the developers would like to pause the feature.
@@ -103,7 +103,7 @@ Uplifts can include:
 
 ### Version Names
 
-Thunderbird for Android stable release versions follow the `X.Y` format, where:
+QubesMail for Android stable release versions follow the `X.Y` format, where:
 
 - **X (Major version):** Incremented for each new release cycle.
 - **Y (Patch version):** Incremented when changes are added to an existing major version.
@@ -131,11 +131,11 @@ For example:
 
 ## Milestones
 
-We use GitHub Milestones to track work for each major release. There is only one milestone for the whole major release, so work going into 9.0 and 9.1 would both be in the "Thunderbird 9" milestone. Each milestone has the due date set to the anticipated release date.
+We use GitHub Milestones to track work for each major release. There is only one milestone for the whole major release, so work going into 9.0 and 9.1 would both be in the "QubesMail 9" milestone. Each milestone has the due date set to the anticipated release date.
 
 There are exactly three open milestones at any given time, some of our automation depends on this being the case. The milestone with the date furthest into the future is the target for the `main` branch, the one closest is the target for the `release` branch. When an uplift occurs, the milestone is changed to the respective next target.
 
-Learn more on the [milestones page](https://github.com/thunderbird/thunderbird-android/milestones)
+Learn more on the [milestones page](https://github.com/qubesmail/qubesmail-android/milestones)
 
 ## Merge Days
 
@@ -144,15 +144,15 @@ Active development occurs on the `main` branch and becomes part of the daily bui
 1. `main` is merged into `beta`, for testing.
 2. `beta` is merged into `release`, making it publicly available.
 
-On the former, `main` carries over to `beta`, where the community can test the changes as part of “Thunderbird Beta for Testers” (`net.thunderbird.android.beta`) until the next merge day.
-On the latter, code that was in beta goes to release, where the general population receives product updates (`net.thunderbird.android`).
+On the former, `main` carries over to `beta`, where the community can test the changes as part of “QubesMail Beta for Testers” (`net.qubesmail.android.beta`) until the next merge day.
+On the latter, code that was in beta goes to release, where the general population receives product updates (`net.qubesmail.android`).
 
-When a merge occurs, the version name is carried forward to the next branch, and the alpha/beta suffixes are removed/reset accordingly. For example, let’s say we are shortly before the Thunderbird 9.0 release. The latest releases were Thunderbird 8.1, Thunderbird Beta 9.0b4, and Thunderbird Daily 10.0a1. Here is what happens:
+When a merge occurs, the version name is carried forward to the next branch, and the alpha/beta suffixes are removed/reset accordingly. For example, let’s say we are shortly before the QubesMail 9.0 release. The latest releases were QubesMail 8.1, QubesMail Beta 9.0b4, and QubesMail Daily 10.0a1. Here is what happens:
 
 - The `beta` branch is merged to `release`. The resulting version on release changes from 8.1 to 9.0.
-  - The version *code* will not be incremented on `release` until the [Shippable Build & Signing](https://github.com/thunderbird/thunderbird-android/actions/workflows/shippable_builds.yml) action is run for the 9.0 release
+  - The version *code* will not be incremented on `release` until the [Shippable Build & Signing](https://github.com/qubesmail/qubesmail-android/actions/workflows/shippable_builds.yml) action is run for the 9.0 release
 - The `main` branch is merged to `beta`. The resulting version on beta changes from 9.0b4 to 10.0b1
-  - The version *code* will not be incremented on `beta` until the [Shippable Build & Signing](https://github.com/thunderbird/thunderbird-android/actions/workflows/shippable_builds.yml) action is run for the 10.0b1 release
+  - The version *code* will not be incremented on `beta` until the [Shippable Build & Signing](https://github.com/qubesmail/qubesmail-android/actions/workflows/shippable_builds.yml) action is run for the 10.0b1 release
 - The `main` branch version number is changed from 10.0a1 to 11.0a1
 
 While the version name changes, it must be ensured that the version code remains on the same sequence for each branch. For example:
@@ -162,8 +162,8 @@ While the version name changes, it must be ensured that the version code remains
 
 Our application IDs are specific to the branch they are on. For example:
 
-- Beta always uses `net.thunderbird.android.beta` as the app ID for TfA.
-- Release always uses `net.thunderbird.android` as the app ID for TfA.
+- Beta always uses `net.qubesmail.android.beta` as the app ID for TfA.
+- Release always uses `net.qubesmail.android` as the app ID for TfA.
 - Release always uses `com.fsck.k9` as the app ID for K-9.
 
 ### Merge Process
@@ -182,7 +182,7 @@ The merge process enables various benefits, including:
    - You will be performing the merge from main into beta
    - The main branch is locked and cannot be changed during the merge
    - You will let them know when the merge is complete and main is re-opened
-3. Clone thunderbird-android into three working directories:
+3. Clone qubesmail-android into three working directories:
    - `merge_beta` - where you'll perform the merge; check out the `beta` branch
    - `orig_main` - reference copy on the `main` branch
    - `orig_beta` - reference copy on the `beta` branch
@@ -204,7 +204,7 @@ The merge process enables various benefits, including:
    - Open a new milestone for the new version
    - Close the oldest milestone
    - There should always be 3 milestones open (main, beta, release)
-9. Submit a pull request that increments the version name in main (e.g. https://github.com/thunderbird/thunderbird-android/pull/11034)
+9. Submit a pull request that increments the version name in main (e.g. https://github.com/qubesmail/qubesmail-android/pull/11034)
 10. Once the version increment is merged into main, unlock the branch
 11. Send a message to the #tb-mobile-dev:mozilla.org channel to notify of merge completion and that main is re-opened for the new version (e.g. 21.0)
 
@@ -213,7 +213,7 @@ The merge process enables various benefits, including:
 1. Send a message to the #tb-mobile-dev:mozilla.org matrix channel to let them know:
    - You will be performing the merge from beta into release
    - You will let them know when the merge is complete
-2. Clone thunderbird-android into three working directories:
+2. Clone qubesmail-android into three working directories:
    - `merge_release` - where you'll perform the merge; check out the `release` branch
    - `orig_beta` - reference copy on the `beta` branch
    - `orig_release` - reference copy on the `release` branch
@@ -247,7 +247,7 @@ Be sure to review merge results and ensure correctness before pushing to the rep
 Files of particular importance are:
 
 - app-k9mail/build.gradle.kts
-- app-thunderbird/build.gradle.kts
+- app-qubesmail/build.gradle.kts
 - app-k9mail/src/main/res/raw/changelog_master.xml
 
 These build.gradle.kts files must be handled as described under "Merge Days" above. This is part of the do_merge.sh automation.
@@ -257,7 +257,7 @@ The app-k9mail/src/main/res/raw/changelog_master.xml should not include any beta
 ## Releases
 
 Releases for both K-9 and Thunderbird for Android are automated with github actions.
-Daily builds are scheduled with the [Daily Builds](https://github.com/thunderbird/thunderbird-android/actions/workflows/build-daily.yml) action and all builds are performed by the [Shippable Build & Signing](https://github.com/thunderbird/thunderbird-android/actions/workflows/shippable_builds.yml) action.
+Daily builds are scheduled with the [Daily Builds](https://github.com/qubesmail/qubesmail-android/actions/workflows/build-daily.yml) action and all builds are performed by the [Shippable Build & Signing](https://github.com/qubesmail/qubesmail-android/actions/workflows/shippable_builds.yml) action.
 
 For the historical manual release process, see [Releasing](HISTORICAL_RELEASE.md).
 
@@ -266,10 +266,10 @@ For the historical manual release process, see [Releasing](HISTORICAL_RELEASE.md
 These are the general steps for a release:
 
 1. Perform merge or uplifts. Each release is the result of either a merge or uplift
-2. Draft release notes at [thunderbird-notes](https://github.com/thunderbird/thunderbird-notes)
-3. Trigger build via the [Shippable Build & Signing](https://github.com/thunderbird/thunderbird-android/actions/workflows/shippable_builds.yml) action
+2. Draft release notes at [qubesmail-notes](https://github.com/qubesmail/qubesmail-notes)
+3. Trigger build via the [Shippable Build & Signing](https://github.com/qubesmail/qubesmail-android/actions/workflows/shippable_builds.yml) action
 
-- Release notes must be landed to `prod` before triggering [Shippable Build & Signing](https://github.com/thunderbird/thunderbird-android/actions/workflows/shippable_builds.yml), or the build will fail
+- Release notes must be landed to `prod` before triggering [Shippable Build & Signing](https://github.com/qubesmail/qubesmail-android/actions/workflows/shippable_builds.yml), or the build will fail
 
 4. Review the build results by reviewing the action summary and the git commits resulting from the build
 

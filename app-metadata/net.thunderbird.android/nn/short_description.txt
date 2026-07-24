@@ -1,1 +1,1 @@
-Thunderbird er ein personvernfokusert e-post app med 100% open kjeldekode.
+QubesMail er ein personvernfokusert e-post app med 100% open kjeldekode.

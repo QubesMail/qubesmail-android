@@ -1,6 +1,6 @@
 # 📦 Feature Modules and Extensions
 
-The Thunderbird for Android project is organized into multiple feature modules, each encapsulating a specific
+The QubesMail for Android project is organized into multiple feature modules, each encapsulating a specific
 functionality of the application. This document provides an overview of the main feature modules, how they are
 split into subfeatures, and how the application can be extended with additional features.
 
@@ -19,7 +19,7 @@ When developing new feature modules or extending existing ones, follow these bes
 9. **Accessibility**: Ensure all features are accessible to all users
 10. **Internationalization**: Design features with internationalization in mind
 
-By following these guidelines, the Thunderbird for Android application can maintain a clean, modular architecture while
+By following these guidelines, the QubesMail for Android application can maintain a clean, modular architecture while
 expanding its functionality to meet user needs.
 
 ## 📋 Feature Module Overview
@@ -220,9 +220,9 @@ feature:onboarding
 └── feature:onboarding:migration
     ├── feature:onboarding:migration:api
     ├── feature:onboarding:migration:internal
-    ├── feature:onboarding:migration:thunderbird
-    │   ├── feature:onboarding:migration:thunderbird:api
-    │   └── feature:onboarding:migration:thunderbird:internal
+    ├── feature:onboarding:migration:qubesmail
+    │   ├── feature:onboarding:migration:qubesmail:api
+    │   └── feature:onboarding:migration:qubesmail:internal
     └── feature:onboarding:migration:noop
         ├── feature:onboarding:migration:noop:api
         └── feature:onboarding:migration:noop:internal
@@ -242,7 +242,7 @@ feature:onboarding
   - **Internal**: Concrete implementations of permission requests
 - **Migration**: Data migration from other apps
   - **API/Internal**: Core migration interfaces and internal implementations
-  - **Thunderbird**: Thunderbird-specific migration implementation
+  - **QubesMail**: QubesMail-specific migration implementation
   - **Noop**: No-operation implementation for testing
 
 ### ⚙️ Settings Module
@@ -404,7 +404,7 @@ The Migration module handles data migration between different email clients.
 - **Launcher** (`feature:migration:launcher`): Migration launcher
   - **API** (`feature:migration:launcher:api`): Launcher interfaces
   - **Noop** (`feature:migration:launcher:noop`): No-operation implementation
-  - **Thunderbird** (`feature:migration:launcher:thunderbird`): Thunderbird-specific implementation
+  - **QubesMail** (`feature:migration:launcher:qubesmail`): QubesMail-specific implementation
 
 ### 📊 Telemetry Module
 
@@ -418,7 +418,7 @@ The Telemetry module handles usage analytics and reporting.
 
 ## 🔌 Extending with Additional Features
 
-The modular architecture of Thunderbird for Android allows for easy extension with additional features. To give you an
+The modular architecture of QubesMail for Android allows for easy extension with additional features. To give you an
 idea how the app could be extended when building a new feature, here are some theoretical examples along with their
 structure:
 

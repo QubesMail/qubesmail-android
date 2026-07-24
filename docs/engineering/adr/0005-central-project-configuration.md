@@ -1,6 +1,6 @@
 # Central Management of Android Project Dependencies and Gradle Configurations via Build-Plugin Module
 
-- Pull Request: [#7803](https://github.com/thunderbird/thunderbird-android/pull/7803)
+- Pull Request: [#7803](https://github.com/qubesmail/qubesmail-android/pull/7803)
 
 ## Status
 

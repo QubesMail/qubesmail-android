@@ -20,5 +20,5 @@ Má tá trioblóid agat le K-9 Mail, iarr cabhair inár <a href="https://forum.k
 <b>Ar mhaith leat cabhrú?</b>
 
 Is tionscadal forbartha pobail é K-9 Mail. Má tá suim agat cabhrú leis an aip a fheabhsú, bí linn!
-Is féidir leat ár lorgaire fabhtanna, ár gcód foinse agus ár vicí a fháil ag <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> .
+Is féidir leat ár lorgaire fabhtanna, ár gcód foinse agus ár vicí a fháil ag <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> .
 Tá áthas orainn i gcónaí fáilte a chur roimh fhorbróirí nua, dearthóirí, doiciméadaithe, aistritheoirí, triáiseoirí fabhtanna agus cairde.

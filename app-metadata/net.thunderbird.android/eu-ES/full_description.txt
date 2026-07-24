@@ -1,4 +1,4 @@
-Thunderbird pribatutasunean zentratutako posta elektronikoko aplikazio indartsua da. Kudeatu esfortzurik gabe posta elektronikoko hainbat kontu aplikazio bakarretik, produktibitate handiena lortzeko Sarrera-ontzi bateratu aukerarekin. Kode irekiko teknologian eraikia eta garatzaile talde dedikatu batek lagunduta, boluntarioen komunitate global batekin batera, Thunderbird-ek ez ditu inoiz zure datu pribatuak produktu gisa tratatzen. Gure erabiltzaileen diru-ekarpenekin soilik onartzen da, beraz, ez duzu inoiz berriro ikusi behar iragarkiak zure mezu elektronikoekin nahastuta.
+QubesMail pribatutasunean zentratutako posta elektronikoko aplikazio indartsua da. Kudeatu esfortzurik gabe posta elektronikoko hainbat kontu aplikazio bakarretik, produktibitate handiena lortzeko Sarrera-ontzi bateratu aukerarekin. Kode irekiko teknologian eraikia eta garatzaile talde dedikatu batek lagunduta, boluntarioen komunitate global batekin batera, QubesMail-ek ez ditu inoiz zure datu pribatuak produktu gisa tratatzen. Gure erabiltzaileen diru-ekarpenekin soilik onartzen da, beraz, ez duzu inoiz berriro ikusi behar iragarkiak zure mezu elektronikoekin nahastuta.
 
 <b>Zer egin dezakezu:</b>
 <ul>
@@ -11,21 +11,21 @@ Thunderbird pribatutasunean zentratutako posta elektronikoko aplikazio indartsua
 
 <b>Bateragarritasuna</b>
 <ul>
-  <li>Thunderbird-ek IMAP eta POP3 protokoloekin funtzionatzen du eta posta elektronikoko hornitzaile ugari onartzen ditu, besteak beste, Gmail, Outlook, Yahoo Mail, iCloud eta abar.</li>
+  <li>QubesMail-ek IMAP eta POP3 protokoloekin funtzionatzen du eta posta elektronikoko hornitzaile ugari onartzen ditu, besteak beste, Gmail, Outlook, Yahoo Mail, iCloud eta abar.</li>
 </ul>
 
-<b>Zergatik erabili Thunderbird:</b>
+<b>Zergatik erabili QubesMail:</b>
 <ul>
   <li>20 urtetik gorako posta elektronikoko aplikazio fidagarria - orain Android-en.</li>
-  <li>Thunderbird gure erabiltzaileen borondatezko ekarpenekin finantzatzen da guztiz. Ez ditugu zure datu pertsonalak erabiltzen. Ez zara inoiz produktua.</li>
+  <li>QubesMail gure erabiltzaileen borondatezko ekarpenekin finantzatzen da guztiz. Ez ditugu zure datu pertsonalak erabiltzen. Ez zara inoiz produktua.</li>
   <li>Zu bezain eraginkorra den talde batek egina. Aplikazioa erabiltzen denbora gutxien igaro dezazun nahi dugu, trukean gehienez.</li>
-  <li>Mundu osoko laguntzaileekin, Thunderbird Android-erako 20 hizkuntza baino gehiagotara itzuli da.</li>
+  <li>Mundu osoko laguntzaileekin, QubesMail Android-erako 20 hizkuntza baino gehiagotara itzuli da.</li>
   <li>MZLA Technologies Corporation-ek lagunduta, Mozilla Fundazioaren jabetza osoa duen filiala.</li>
 </ul>
 
 <b>Kode irekia eta komunitatea</b>
 <ul>
-  <li>Thunderbird doakoa eta kode irekia da, hau da, bere kodea eskuragarri dago libreki ikusteko, aldatzeko, erabiltzeko eta partekatzeko. Bere lizentziak betirako doakoa izango dela ziurtatzen du. Thunderbird milaka kolaboratzaileren opari bat dela pentsa dezakezu.</li>
+  <li>QubesMail doakoa eta kode irekia da, hau da, bere kodea eskuragarri dago libreki ikusteko, aldatzeko, erabiltzeko eta partekatzeko. Bere lizentziak betirako doakoa izango dela ziurtatzen du. QubesMail milaka kolaboratzaileren opari bat dela pentsa dezakezu.</li>
   <li>Gure blogean eta posta zerrendetan ohiko eguneratze gardenekin garatzen gara.</li>
-  <li>Gure erabiltzaileentzako laguntza gure mundu mailako komunitateak eskaintzen du. Bilatu behar dituzun erantzunak edo sartu kolaboratzaile baten rola: galderak erantzuten, aplikazioa itzultzen edo zure lagunei eta senideei Thunderbird-i buruz kontatu.</li>
+  <li>Gure erabiltzaileentzako laguntza gure mundu mailako komunitateak eskaintzen du. Bilatu behar dituzun erantzunak edo sartu kolaboratzaile baten rola: galderak erantzuten, aplikazioa itzultzen edo zure lagunei eta senideei QubesMail-i buruz kontatu.</li>
 </ul>

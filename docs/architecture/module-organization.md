@@ -1,10 +1,10 @@
 # 📦 Module Organization
 
-The Thunderbird for Android project is following a modularization approach, where the codebase is divided into multiple
+The QubesMail for Android project is following a modularization approach, where the codebase is divided into multiple
 distinct modules. These modules encapsulate specific functionality and can be developed, tested, and maintained
 independently. This modular architecture promotes reusability, scalability, and maintainability of the codebase.
 
-This document outlines the adopted module organization for the Thunderbird for Android project, serving as a guide for
+This document outlines the adopted module organization for the QubesMail for Android project, serving as a guide for
 developers to understand the codebase structure and ensure consistent architectural patterns.
 
 ## 📂 Module Overview
@@ -15,7 +15,7 @@ The modules are organized into several types, each serving a specific purpose in
 graph TB
     subgraph APP[App Modules]
         direction TB
-        APP_TB["`**:app-thunderbird**<br>Thunderbird for Android`"]
+        APP_TB["`**:app-qubesmail**<br>QubesMail for Android`"]
         APP_K9["`**:app-k9mail**<br>K-9 Mail`"]
     end
 
@@ -233,7 +233,7 @@ Rules for module dependencies:
 graph TB
     subgraph APP[App Modules]
         direction TB
-        APP_TB["`**:app-thunderbird**<br>Thunderbird for Android`"]
+        APP_TB["`**:app-qubesmail**<br>QubesMail for Android`"]
         APP_K9["`**:app-k9mail**<br>K-9 Mail`"]
     end
 

@@ -1,6 +1,6 @@
 # 👁️ Code Review Guide
 
-This guide outlines best practices for creating and reviewing pull requests (PRs) in the Thunderbird for Android
+This guide outlines best practices for creating and reviewing pull requests (PRs) in the QubesMail for Android
 project. It is intended to help both authors and reviewers ensure high-quality contributions.
 
 ### ✅ Quick PR checklist (for authors)

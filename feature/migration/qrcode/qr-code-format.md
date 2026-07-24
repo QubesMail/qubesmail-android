@@ -1,7 +1,7 @@
-# Thunderbird "Export for Mobile" QR code format (version 1)
+# QubesMail "Export for Mobile" QR code format (version 1)
 
-This specification describes the data format of the QR code payload used by Thunderbird desktop to export account to
-Thunderbird Mobile.
+This specification describes the data format of the QR code payload used by QubesMail desktop to export account to
+QubesMail Mobile.
 
 ## Specification versions
 
@@ -13,11 +13,11 @@ Initial version.
 
 ### Reader
 
-A reader is the software parsing the QR code payload after it has been scanned, e.g. Thunderbird for Android.
+A reader is the software parsing the QR code payload after it has been scanned, e.g. QubesMail for Android.
 
 ### Writer
 
-A writer is the software creating QR codes that follow this specification, e.g. Thunderbird for desktop.
+A writer is the software creating QR codes that follow this specification, e.g. QubesMail for desktop.
 
 ### Account
 

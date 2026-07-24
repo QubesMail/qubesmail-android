@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the foldable device support implementation for Thunderbird Android. The feature automatically switches between single-pane and split-view layouts based on the device's fold state.
+This document describes the foldable device support implementation for QubesMail Android. The feature automatically switches between single-pane and split-view layouts based on the device's fold state.
 
 ## Motivation
 
@@ -10,7 +10,7 @@ Foldable devices like Samsung Galaxy Fold and Google Pixel Fold offer different 
 - **Folded**: Smaller outer display (typically 6-7 inches)
 - **Unfolded**: Large inner display (typically 7-8 inches)
 
-Thunderbird already supports split-screen views, but these are static (Always/Never) or orientation-based (When in Landscape). Users of foldable devices must manually change the setting when switching between folded and unfolded states.
+QubesMail already supports split-screen views, but these are static (Always/Never) or orientation-based (When in Landscape). Users of foldable devices must manually change the setting when switching between folded and unfolded states.
 
 ## Implementation
 
@@ -18,7 +18,7 @@ Thunderbird already supports split-screen views, but these are static (Always/Ne
 
 #### 1. SplitViewMode Enum Extension
 
-**File**: `core/preference/api/src/commonMain/kotlin/net/thunderbird/core/preference/GeneralSettings.kt`
+**File**: `core/preference/api/src/commonMain/kotlin/net/qubesmail/core/preference/GeneralSettings.kt`
 
 Added new option:
 

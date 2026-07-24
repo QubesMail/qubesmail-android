@@ -1,4 +1,4 @@
-# Thunderbird Core File Module
+# QubesMail Core File Module
 
 This module provides a simple, consistent API for common file operations across Android and JVM platforms.
 

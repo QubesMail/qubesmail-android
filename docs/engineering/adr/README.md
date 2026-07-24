@@ -31,7 +31,7 @@ document is clear and concise.
 Once you are ready to propose your ADR, you should:
 
 1. Create an issue in the repository, get consensus from at least one other project contributor.
-2. Make a post on [the mobile-planning list](https://thunderbird.topicbox.com/groups/mobile-planning)
+2. Make a post on [the mobile-planning list](https://qubesmail.topicbox.com/groups/mobile-planning)
    to announce your ADR. You can use the below template as needed.
 3. Create a pull request in the repository linking the issue.
 4. Make a decision together with mobile module owners, the PR will be merged when accepted.

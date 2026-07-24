@@ -1,14 +1,14 @@
 # RFC 0003: Render inline images in plain-text messages
 
-- Issue: [#11179](https://github.com/thunderbird/thunderbird-android/issues/11179)
+- Issue: [#11179](https://github.com/qubesmail/qubesmail-android/issues/11179)
 - Technical design: TBD
 - Status: **Proposed**
 
 ## Summary
 
 Display images in the message body when a message carries them as positionally placed parts rather than `cid:`
--referenced HTML images. Today these render only as attachments. This brings Thunderbird for Android in line with
-Thunderbird Desktop, which displays such images inline. **This behaviour must be secured under a feature flag
+-referenced HTML images. Today these render only as attachments. This brings QubesMail for Android in line with
+QubesMail Desktop, which displays such images inline. **This behaviour must be secured under a feature flag
 (`enable_inline_images_positional_body_message`) while it is being implemented and validated.**
 
 ## Motivation
@@ -31,7 +31,7 @@ Currently, the app only inlines images that are referenced from an HTML body via
 condition, so it is shown solely as an attachment. The user sees an attachment card/entry instead of the picture the
 sender placed in the message.
 
-Thunderbird Desktop displays this image inline by default. This divergence is a usability gap because the same message
+QubesMail Desktop displays this image inline by default. This divergence is a usability gap because the same message
 does not look the same across products.
 
 This is **not** a regression: the `cid:` inline path works correctly. It is a class of message that has never been
@@ -88,7 +88,7 @@ consistently to users.**
     correctly by default.
 - **Hide all inline images from the attachment list (body-only).** Consistent with how Android treats `cid:` inline
   images today.
-  - **Rejected** because it removes the explicit save/discovery affordance. Thunderbird for Android supports
+  - **Rejected** because it removes the explicit save/discovery affordance. QubesMail for Android supports
     long-press save on inline images, but that is less visible than the attachment UI.
 - **Do nothing.** Leave these images as attachments.
   - **Rejected:** It is a visible cross-product inconsistency on a common message shape.

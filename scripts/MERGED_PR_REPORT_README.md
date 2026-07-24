@@ -1,6 +1,6 @@
 # Merged PR Report
 
-Generate a monthly report of pull requests merged into the `main`, `beta`, and `release` branches of `thunderbird/thunderbird-android`.
+Generate a monthly report of pull requests merged into the `main`, `beta`, and `release` branches of `qubesmail/qubesmail-android`.
 
 The script `scripts/merged-pr-report.sh` produces:
 
@@ -46,7 +46,7 @@ For each PR merge commit, the script determines:
 
 Possible values:
 
-- A tag (e.g. `THUNDERBIRD_115_0b1`, `THUNDERBIRD_115_1_0`)
+- A tag (e.g. `QUBESMAIL_115_0b1`, `QUBESMAIL_115_1_0`)
 - `Not released yet` (commit reached the branch but is not yet tagged)
 - `-` (commit not present in that branch history)
 

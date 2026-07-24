@@ -29,7 +29,7 @@ The theming system follows a hierarchical structure:
 ```mermaid
 graph TD
     subgraph APP_THEMES["App-Specific Themes"]
-        TB_THEME[ThunderbirdBoltTheme]
+        TB_THEME[QubesMailBoltTheme]
         K9_THEME[K9MailBoltTheme]
     end
 
@@ -480,17 +480,17 @@ The app-specific themes (`ThunderbirdBoltTheme` and `K9MailBoltTheme`) customize
 - Configure theme components through `ThemeConfig`
 - Use default values for common components (elevations, sizes, spacings, shapes, typography)
 
-### ThunderbirdBoltTheme
+### QubesMailBoltTheme
 
 ```kotlin
 @Composable
-fun ThunderbirdBoltTheme(
+fun QubesMailBoltTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit,
 ) {
     val images = ThemeImages(
-        logo = R.drawable.bolt_thunderbird_logo,
+        logo = R.drawable.bolt_qubesmail_logo,
     )
 
     val themeConfig = ThemeConfig(
@@ -563,10 +563,10 @@ fun K9MailBoltTheme(
 To apply a theme to your UI, wrap your composables with the appropriate theme composable:
 
 ```kotlin
-// For Thunderbird app
+// For QubesMail app
 @Composable
-fun ThunderbirdApp() {
-    ThunderbirdBoltTheme {
+fun QubesMailApp() {
+    QubesMailBoltTheme {
         // App content
     }
 }
@@ -617,7 +617,7 @@ The theming system supports both dark mode and dynamic color:
 
 ```kotlin
 @Composable
-fun ThunderbirdBoltTheme(
+fun QubesMailBoltTheme(
     darkTheme: Boolean = isSystemInDarkTheme(), // Default to system setting
     dynamicColor: Boolean = false, // Disabled by default
     content: @Composable () -> Unit,
@@ -674,7 +674,7 @@ When writing tests for composables that use theme components, you need to wrap t
 @Test
 fun testThemedButton() {
     composeTestRule.setContent {
-        ThunderbirdBoltTheme {
+        QubesMailBoltTheme {
             ThemedButton(
                 text = "Click Me",
                 onClick = {},

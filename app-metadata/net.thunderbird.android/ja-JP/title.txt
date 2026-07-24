@@ -1,1 +1,1 @@
-Thunderbird: 受信トレイをもっと自由に
+QubesMail: 受信トレイをもっと自由に

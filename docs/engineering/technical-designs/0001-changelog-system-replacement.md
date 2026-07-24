@@ -1,6 +1,6 @@
 # Technical Design 0001: Changelog System Replacement
 
-* Issue: [#11079](https://github.com/thunderbird/thunderbird-android/issues/11079)
+* Issue: [#11079](https://github.com/qubesmail/qubesmail-android/issues/11079)
 * RFC: [Changelog System Replacement](../rfcs/0001-changelog-system-replacement.md)
 * Status: **Proposed**
 
@@ -28,11 +28,11 @@ Relevant areas:
 * `scripts/ci/render-notes.py`
 * `scripts/ci/templates/changelog_master.xml`
 * `app-k9mail/src/main/res/raw/changelog_master.xml`
-* `app-thunderbird/src/*/res/raw/changelog_master.xml`
+* `app-qubesmail/src/*/res/raw/changelog_master.xml`
 * `feature/changelog/internal`
-* `feature/changelog/internal/src/main/kotlin/net/thunderbird/feature/changelog/internal/ChangeLogManager.kt`
-* `feature/changelog/internal/src/main/kotlin/net/thunderbird/feature/changelog/internal/ChangelogViewModel.kt`
-* `feature/changelog/internal/src/main/kotlin/net/thunderbird/feature/changelog/internal/RecentChangesViewModel.kt`
+* `feature/changelog/internal/src/main/kotlin/net/qubesmail/feature/changelog/internal/ChangeLogManager.kt`
+* `feature/changelog/internal/src/main/kotlin/net/qubesmail/feature/changelog/internal/ChangelogViewModel.kt`
+* `feature/changelog/internal/src/main/kotlin/net/qubesmail/feature/changelog/internal/RecentChangesViewModel.kt`
 * `feature/changelog/internal/build.gradle.kts`
 * `legacy/ui/legacy/build.gradle.kts`
 * `gradle/libs.versions.toml`
@@ -64,7 +64,7 @@ app-k9mail/
             `-- raw/
                 `-- changelog_master.xml
 
-app-thunderbird/
+app-qubesmail/
 `-- src/
     |-- daily/
     |   `-- res/
@@ -93,7 +93,7 @@ app-k9mail/
                 |-- changelog_index.json
                 `-- changelog_release_dummy.json
 
-app-thunderbird/
+app-qubesmail/
 `-- src/
     |-- release/
     |   `-- res/
@@ -135,30 +135,30 @@ R.raw.changelog_index
 The index points to generated per-release raw resources. Android cannot scan arbitrary files in `res/raw`, so the index
 is the app's discovery mechanism.
 
-The layout matches `thunderbird-notes`, where release notes are maintained as one file per release. Generation can
+The layout matches `qubesmail-notes`, where release notes are maintained as one file per release. Generation can
 transform each release source file into one packaged release resource and update the index separately.
 
 Expected generated index files:
 
 ```text
 app-k9mail/src/release/res/raw/changelog_index.json
-app-thunderbird/src/release/res/raw/changelog_index.json
-app-thunderbird/src/beta/res/raw/changelog_index.json
-app-thunderbird/src/daily/res/raw/changelog_index.json
+app-qubesmail/src/release/res/raw/changelog_index.json
+app-qubesmail/src/beta/res/raw/changelog_index.json
+app-qubesmail/src/daily/res/raw/changelog_index.json
 ```
 
 Expected debug dummy index files:
 
 ```text
 app-k9mail/src/debug/res/raw/changelog_index.json
-app-thunderbird/src/debug/res/raw/changelog_index.json
+app-qubesmail/src/debug/res/raw/changelog_index.json
 ```
 
 Expected debug dummy release files:
 
 ```text
 app-k9mail/src/debug/res/raw/changelog_release_dummy.json
-app-thunderbird/src/debug/res/raw/changelog_release_dummy.json
+app-qubesmail/src/debug/res/raw/changelog_release_dummy.json
 ```
 
 Expected per-release file naming:
@@ -171,10 +171,10 @@ changelog_release_<version>_<date>.json
 Example:
 
 ```text
-app-thunderbird/src/release/res/raw/changelog_release_17_0.json
-app-thunderbird/src/beta/res/raw/changelog_release_10_0_b1.json
-app-thunderbird/src/beta/res/raw/changelog_release_10_0_b2.json
-app-thunderbird/src/daily/res/raw/changelog_release_21_0_a1_2026_05_29.json
+app-qubesmail/src/release/res/raw/changelog_release_17_0.json
+app-qubesmail/src/beta/res/raw/changelog_release_10_0_b1.json
+app-qubesmail/src/beta/res/raw/changelog_release_10_0_b2.json
+app-qubesmail/src/daily/res/raw/changelog_release_21_0_a1_2026_05_29.json
 ```
 
 The release filename is derived from the release `version`. Daily release filenames also append the `date` because daily
@@ -184,7 +184,7 @@ and replacing characters outside `[a-z0-9_]` with `_`. For example, `10.0b1` bec
 `2026_05_29`.
 
 K-9 Mail currently stores `changelog_master.xml` in `app-k9mail/src/main/res/raw`. The JSON replacement should change that
-structure to be consistent with Thunderbird for Android during migration and switch to:
+structure to be consistent with QubesMail for Android during migration and switch to:
 
 ```text
 app-k9mail/src/release/res/raw/changelog_index.json
@@ -214,7 +214,7 @@ Index shape:
     {
       "version": "21.0",
       "date": "2026-05-29",
-      "url": "https://github.com/thunderbird/thunderbird-android/releases/tag/THUNDERBIRD_21_0",
+      "url": "https://github.com/qubesmail/qubesmail-android/releases/tag/QUBESMAIL_21_0",
       "resourceName": "changelog_release_21_0"
     }
   ]
@@ -228,7 +228,7 @@ Release file shape:
   "schemaVersion": 1,
   "version": "21.0",
   "date": "2026-05-29",
-  "url": "https://github.com/thunderbird/thunderbird-android/releases/tag/THUNDERBIRD_21_0",
+  "url": "https://github.com/qubesmail/qubesmail-android/releases/tag/QUBESMAIL_21_0",
   "notes": [
     {
       "type": "fixed",
@@ -281,7 +281,7 @@ Optional note fields:
 * `issues`: array of positive integers.
 * `pullRequests`: array of positive integers.
 * `featureFlags`: array of non-empty strings.
-* `source`: enum, one of `thunderbird-notes` or `ckchangelog-xml`.
+* `source`: enum, one of `qubesmail-notes` or `ckchangelog-xml`.
 
 The schemas must use `additionalProperties: false` for every object.
 
@@ -294,15 +294,15 @@ Release ordering:
 * Releases sort by descending `date`.
 * Recent Changes matches the full current app version name to the release `version` for beta and release builds.
 * Recent Changes matches both the full current app version name and the current date for daily builds.
-* Per-release resource names are derived from the release `version`, matching `thunderbird-notes`.
+* Per-release resource names are derived from the release `version`, matching `qubesmail-notes`.
 * Daily per-release resource names also include the `date` to avoid collisions while the daily version name suffix remains
   `a1`.
 
 Note ordering:
 
 * Notes render in the order they appear in the release file.
-* Generation must preserve source note order from `thunderbird-notes`.
-* For `thunderbird-notes` files with `groups`, generation must preserve source note order within each generated
+* Generation must preserve source note order from `qubesmail-notes`.
+* For `qubesmail-notes` files with `groups`, generation must preserve source note order within each generated
   release file after filtering by release group.
 * XML migration must preserve source XML note order after classification.
 
@@ -330,14 +330,14 @@ URLs:
 
 Issue and pull request references:
 
-* `issues` maps from `thunderbird-notes` `issues`.
-* `pullRequests` maps from `thunderbird-notes` `pull_requests`.
+* `issues` maps from `qubesmail-notes` `issues`.
+* `pullRequests` maps from `qubesmail-notes` `pull_requests`.
 * These fields are the canonical link metadata for notes.
 * XML migration must not invent issue or pull request references.
 
 App-specific notes:
 
-* `thunderbird_only: true` notes are emitted only for Thunderbird targets.
+* `qubesmail_only: true` notes are emitted only for QubesMail targets.
 * `k9mail_only: true` notes are emitted only for K-9 Mail targets.
 * Notes without app-specific metadata are emitted for both apps, subject to feature flag filtering.
 * If both `thunderbird_only` and `k9mail_only` are true, generation must fail.
@@ -354,7 +354,7 @@ scripts/ci/render-notes.py
 
 Generation behavior:
 
-1. Read release notes from `thunderbird-notes`.
+1. Read release notes from `qubesmail-notes`.
 2. Create one release file for each entry in `release.releases`.
 3. Use the release entry `version` and `release_date` as the generated release `version` and `date`.
 4. For grouped beta notes, include only notes whose `group` belongs to the generated release entry.
@@ -377,15 +377,15 @@ preferred source for the packaged in-app changelog when long-form content exists
 
 ### Feature Flag Handling
 
-Feature-gated changelog notes require explicit metadata in `thunderbird-notes`.
+Feature-gated changelog notes require explicit metadata in `qubesmail-notes`.
 
 Relevant feature flag factory locations include:
 
 ```text
-app-thunderbird/src/release/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt
-app-thunderbird/src/beta/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt
-app-thunderbird/src/daily/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt
-app-thunderbird/src/debug/kotlin/net/thunderbird/android/featureflag/TbFeatureFlagFactory.kt
+app-qubesmail/src/release/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt
+app-qubesmail/src/beta/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt
+app-qubesmail/src/daily/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt
+app-qubesmail/src/debug/kotlin/net/qubesmail/android/featureflag/TbFeatureFlagFactory.kt
 app-k9mail/src/release/kotlin/app/k9mail/featureflag/K9FeatureFlagFactory.kt
 app-k9mail/src/debug/kotlin/app/k9mail/featureflag/K9FeatureFlagFactory.kt
 ```
@@ -409,7 +409,7 @@ scripts/migrate-changelog-xml-to-json.py
 ```
 
 The migration tool lives under `scripts` because it is repository-level migration tooling. It is separate from
-`scripts/ci/render-notes.py`, which remains responsible for normal release-note generation from `thunderbird-notes`.
+`scripts/ci/render-notes.py`, which remains responsible for normal release-note generation from `qubesmail-notes`.
 
 The migration tool must:
 
@@ -460,7 +460,7 @@ Runtime requirements:
   version, or contains invalid JSON.
 * Return an empty changelog in release, beta, and daily builds when the index or a required release file is missing, has
   an unsupported schema version, or contains invalid JSON.
-* Use `net.thunderbird.core.logging.Logger` for non-PII diagnostics when decode fails.
+* Use `net.qubesmail.core.logging.Logger` for non-PII diagnostics when decode fails.
 * Map explicit JSON note types to the existing `NEW`, `CHANGED`, and `FIXED` UI categories.
 * Keep the existing Compose UI layout. Adding new display fields requires a later design.
 
@@ -516,8 +516,8 @@ Schema validation:
 
 ```bash
 python -m jsonschema -i app-k9mail/src/release/res/raw/changelog_index.json scripts/ci/schemas/changelog-index.schema.json
-python -m jsonschema -i app-thunderbird/src/release/res/raw/changelog_index.json scripts/ci/schemas/changelog-index.schema.json
-python -m jsonschema -i app-thunderbird/src/release/res/raw/changelog_release_21_0.json scripts/ci/schemas/changelog-release.schema.json
+python -m jsonschema -i app-qubesmail/src/release/res/raw/changelog_index.json scripts/ci/schemas/changelog-index.schema.json
+python -m jsonschema -i app-qubesmail/src/release/res/raw/changelog_release_21_0.json scripts/ci/schemas/changelog-release.schema.json
 ```
 
 Schema tests should verify:
@@ -530,19 +530,19 @@ Schema tests should verify:
 
 Generator tests should verify:
 
-* Type mapping from `thunderbird-notes`.
+* Type mapping from `qubesmail-notes`.
 * Invalid type rejection.
 * Per-release file insert and replace by `version`.
 * Index insert and replace by `version`.
 * Resource name generation from `version`.
 * Resource name generation from beta versions such as `10.0b1`.
-* Multiple release files generated from one `thunderbird-notes` file with multiple `release.releases` entries.
+* Multiple release files generated from one `qubesmail-notes` file with multiple `release.releases` entries.
 * Grouped beta notes are emitted only to the matching generated release file.
 * Descending release ordering by `date`.
 * Source note order preservation.
 * `issues` preservation.
 * `pull_requests` to `pullRequests` mapping.
-* Thunderbird-only note inclusion for Thunderbird targets.
+* QubesMail-only note inclusion for QubesMail targets.
 * Thunderbird-only note omission for K-9 Mail targets.
 * K-9 Mail-only note inclusion for K-9 Mail targets.
 * K-9 Mail-only note omission for Thunderbird targets.

@@ -1,6 +1,6 @@
 # Collecting Debug Logs
 
-Thunderbird for Android can produce debug logs to help diagnose problems and errors. This guide explains how to enable
+QubesMail for Android can produce debug logs to help diagnose problems and errors. This guide explains how to enable
 logging, reproduce the issue, collect logs, and share them with the team.
 
 ## Before you start
@@ -12,11 +12,11 @@ logging, reproduce the issue, collect logs, and share them with the team.
 
 ## Step 1: Enable debug logging
 
-1. Open Thunderbird for Android.
+1. Open QubesMail for Android.
 2. Go to: **Settings** → **General settings** → **Debugging**.
 3. Check: **Enable debug logging**.
 
-If Thunderbird crashes before you can reach Settings, jump directly
+If QubesMail crashes before you can reach Settings, jump directly
 to [Method B: Using a PC with ADB](#method-b-using-a-pc-with-adb).
 
 ## Step 2: Reproduce the problem
@@ -62,19 +62,19 @@ Use this if the app **crashes on startup** or you prefer collecting logs via a c
 
    You should see your device listed. If not, ensure drivers are installed (Windows) and USB debugging is enabled.
 
-2. Find Thunderbird’s **process ID (PID)**:
+2. Find QubesMail’s **process ID (PID)**:
 
    - On Linux / macOS:
 
      ```bash
-     adb shell ps | grep net.thunderbird.android
+     adb shell ps | grep net.qubesmail.android
      # For K-9 Mail:
      adb shell ps | grep com.fsck.k9
      ```
    - On Windows (Command Prompt):
 
      ```bash
-     adb shell ps -A | findstr net.thunderbird.android
+     adb shell ps -A | findstr net.qubesmail.android
      # For K-9 Mail:
      adb shell ps -A | findstr com.fsck.k9
      ```
@@ -82,7 +82,7 @@ Use this if the app **crashes on startup** or you prefer collecting logs via a c
    Example output:
 
    ```plaintext
-   u0_a153       5191   587 4468612 112380 SyS_epoll_wait      0 S net.thunderbird.android
+   u0_a153       5191   587 4468612 112380 SyS_epoll_wait      0 S net.qubesmail.android
    ```
 
    In this example, the PID is **5191**.
@@ -90,7 +90,7 @@ Use this if the app **crashes on startup** or you prefer collecting logs via a c
 3. Capture the debug log to a file:
 
    ```bash
-   adb logcat -d --pid=<PID> > thunderbird-log.txt
+   adb logcat -d --pid=<PID> > qubesmail-log.txt
    ```
 
    Replace `<PID>` (including brackets) with the actual number.
@@ -99,7 +99,7 @@ Use this if the app **crashes on startup** or you prefer collecting logs via a c
    To capture **ongoing logs** while reproducing the issue:
 
    ```bash
-   adb logcat --pid=<PID> > thunderbird-log.txt
+   adb logcat --pid=<PID> > qubesmail-log.txt
    ```
 
    Stop the command with **Ctrl+C** (Windows/Linux) or **Command+C** (macOS).
@@ -126,14 +126,14 @@ you may want to remove before attaching logs:
 - On macOS/Linux: Use `grep` in the terminal. For example, to find passwords:
 
   ```bash
-  grep -iE 'auth|login|password' thunderbird-log.txt
+  grep -iE 'auth|login|password' qubesmail-log.txt
   ```
 
 ## Step 5: Report the Issue and Attach Logs
 
-1. Create a new issue in our [bug tracker](https://github.com/thunderbird/thunderbird-android/issues/new/choose)
+1. Create a new issue in our [bug tracker](https://github.com/qubesmail/qubesmail-android/issues/new/choose)
 2. Include the following:
-   - Thunderbird for Android **version number** (see [Find out version number](find-your-app-version.md)).
+   - QubesMail for Android **version number** (see [Find out version number](find-your-app-version.md)).
    - A clear description of the problem and ideally steps to reproduce it.
    - The collected log file as an **attachment**.
    - Any relevant **screenshots** or **screen recordings**.

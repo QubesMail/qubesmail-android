@@ -1,6 +1,6 @@
 # ADR: Descriptive Title in Title Case
 
-- Issue: [#NNNN](https://github.com/thunderbird/thunderbird-android/issues/NNNN)
+- Issue: [#NNNN](https://github.com/qubesmail/qubesmail-android/issues/NNNN)
 - Status: **Proposed**
 
 ## Context

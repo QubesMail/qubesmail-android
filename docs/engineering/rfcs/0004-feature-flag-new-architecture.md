@@ -1,6 +1,6 @@
 # RFC 0004: Add a Declarative Feature Flag Catalog
 
-- Issue: [#11222](https://github.com/thunderbird/thunderbird-android/issues/11222)
+- Issue: [#11222](https://github.com/qubesmail/qubesmail-android/issues/11222)
 - Technical design: TBD
 - Status: **Proposed**
 
@@ -69,7 +69,7 @@ The catalog is local-only in this phase. It is packaged with the app and cannot 
         }
     ],
     "overrides": {
-        "thunderbird": {
+        "qubesmail": {
             "debug": {
                 "archive_marks_as_read": true,
                 "disable_font_size_config": true,

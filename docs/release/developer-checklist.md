@@ -20,7 +20,7 @@ Do these as part of regular development:
   - Watch crash/ANR reports and GitHub issues for your area of work and investigate regressions
 - Project management
   - Keep your issues in the project up to date (assignees, labels, status) and link PRs to issues
-  - Ensure your issues are added to the [project sprint board](https://github.com/orgs/thunderbird/projects/20) and assigned to the current sprint
+  - Ensure your issues are added to the [project sprint board](https://github.com/orgs/qubesmail/projects/20) and assigned to the current sprint
   - Review the sprint board regularly and pick up backlog items as capacity allows, especially bugs and regressions
   - When reviewing external contributions:
     - Add the issue to the appropriate parent issue if not done already (e.g. `[EPIC] Mobile Foundations QX 20XX`)

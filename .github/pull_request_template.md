@@ -2,14 +2,14 @@
 
 ### Prior to submitting a pull request, please familiarize yourself with...
 
-- Our [Engineering docs](https://github.com/thunderbird/thunderbird-android/tree/main/docs/engineering)
-  - Including the [Architecture Decision Records](https://github.com/thunderbird/thunderbird-android/tree/main/docs/engineering/adr)
-- Our [Architecture docs](https://github.com/thunderbird/thunderbird-android/tree/main/docs/architecture)
+- Our [Engineering docs](https://github.com/qubesmail/qubesmail-android/tree/main/docs/engineering)
+  - Including the [Architecture Decision Records](https://github.com/qubesmail/qubesmail-android/tree/main/docs/engineering/adr)
+- Our [Architecture docs](https://github.com/qubesmail/qubesmail-android/tree/main/docs/architecture)
 - Read [Mozilla’s Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
-- Check out our [contribution code quality guides](https://github.com/thunderbird/thunderbird-android/tree/main/docs/contributing), especially our [git commit guide](https://github.com/thunderbird/thunderbird-android/blob/main/docs/contributing/git-commit-guide.md), which can also help you write your pull request title
+- Check out our [contribution code quality guides](https://github.com/qubesmail/qubesmail-android/tree/main/docs/contributing), especially our [git commit guide](https://github.com/qubesmail/qubesmail-android/blob/main/docs/contributing/git-commit-guide.md), which can also help you write your pull request title
 
 > [!IMPORTANT]
-> Pull requests may take a few days to weeks to review. We’re a small team and prioritize contributions aligned with our [current roadmap](https://developer.thunderbird.net/planning/android-roadmap). 
+> Pull requests may take a few days to weeks to review. We’re a small team and prioritize contributions aligned with our [current roadmap](https://developer.qubesmail.net/planning/android-roadmap). 
 > You can help us by categorizing your pull request with labels. 
 > We appreciate you working with us and will get to reviewing your contribution as soon as we can!
 
@@ -47,5 +47,5 @@ Select **one** of the following (mandatory)
 - [ ] This contribution adheres to the existing codestyle (run `gradlew spotlessCheck` to check and `gradlew spotlessApply` to format your source code; will be checked by CI).
 - [ ] This contribution does not break existing unit tests (run `gradlew testDebugUnitTest`; will be checked by CI).
 - [ ] This contribution includes tests for any new functionality, and maintains tests for any updated functionality.
-- [ ] This contribution adheres to our [Engineering process](https://github.com/thunderbird/thunderbird-android/tree/main/docs/engineering) (RFC/Technical Design/ADR)
+- [ ] This contribution adheres to our [Engineering process](https://github.com/qubesmail/qubesmail-android/tree/main/docs/engineering) (RFC/Technical Design/ADR)
 - [ ] This PR has a descriptive title and body that accurately outlines all changes made, and contains a reference to any issues that it fixes (e.g. _Closes #XXX_ or _Fixes #XXX_).

@@ -1,6 +1,6 @@
 # RFC 0001: Changelog System Replacement
 
-* Issue: [#11079](https://github.com/thunderbird/thunderbird-android/issues/11079)
+* Issue: [#11079](https://github.com/qubesmail/qubesmail-android/issues/11079)
 * Technical design: [Changelog System Replacement](../technical-designs/0001-changelog-system-replacement.md)
 * Status: **Proposed**
 
@@ -66,7 +66,7 @@ This is not preferred because Thunderbird for Android and K-9 Mail have more tha
 the existing changelog has required repeated pruning. A single packaged changelog file would recreate the same growth
 pressure over time.
 
-It would also differ from `thunderbird-notes`, where release notes are maintained as one file per release.
+It would also differ from `qubesmail-notes`, where release notes are maintained as one file per release.
 
 ### Fetch changelog data at runtime
 

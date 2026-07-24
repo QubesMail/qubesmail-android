@@ -20,5 +20,5 @@ K-9 Mail هو عميل بريد إلكتروني مفتوح المصدر يعم�
 <b>هل تريد المساعدة؟</b>
 
 K-9 Mail هو مشروع يطوره المجتمع. إذا كنت مهتمًا بالمساعدة في تحسين التطبيق، فيسعدنا انضمامك إلينا!
-يمكنك العثور على متتبع العلل، والشيفرة المصدرية، والويكي الخاصة بنا على <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+يمكنك العثور على متتبع العلل، والشيفرة المصدرية، والويكي الخاصة بنا على <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 نسعد دائمًا بالترحيب بالمطورين والمصممين والموثقين والمترجمين ومفرزي الأخطاء والأصدقاء الجدد.

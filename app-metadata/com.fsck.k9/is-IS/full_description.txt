@@ -20,5 +20,5 @@ Ef þú átt í vandræðum með K-9 póstforritið, geturðu beðið um hjálp 
 <b>Viltu hjálpa?</b>
 
 K-9 - Póstur er samvinnuverkefni. Ef þú hefur áhuga á að vera með í að bæta hugbúnaðińn, komdu til liðs við okkur!
-Þú finnur villuskráningar, grunnkóða og wiki-síður á <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Þú finnur villuskráningar, grunnkóða og wiki-síður á <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Við tökum vel á móti nýjum forriturum, hönnuðum, skrifurum, þýðendum, villuflokkurum og vinum.

@@ -1,4 +1,4 @@
-Is aip ríomhphoist chumhachtach é Thunderbird atá dírithe ar phríobháideachas. Bainistigh go héasca cuntais ríomhphoist iolracha ó app amháin, le rogha Bosca Isteach Aontaithe le haghaidh táirgiúlacht uasta. Tógtha ar theicneolaíocht foinse oscailte agus tacaithe ag foireann tiomnaithe forbróirí in éineacht le pobal domhanda oibrithe deonacha, ní chaithfidh Thunderbird do shonraí príobháideacha mar tháirge riamh. Le tacaíocht iomlán ó ranníocaíochtaí airgeadais ónár n-úsáideoirí, mar sin ní gá duit fógraí a fheiceáil measctha isteach le do ríomhphoist arís.
+Is aip ríomhphoist chumhachtach é QubesMail atá dírithe ar phríobháideachas. Bainistigh go héasca cuntais ríomhphoist iolracha ó app amháin, le rogha Bosca Isteach Aontaithe le haghaidh táirgiúlacht uasta. Tógtha ar theicneolaíocht foinse oscailte agus tacaithe ag foireann tiomnaithe forbróirí in éineacht le pobal domhanda oibrithe deonacha, ní chaithfidh QubesMail do shonraí príobháideacha mar tháirge riamh. Le tacaíocht iomlán ó ranníocaíochtaí airgeadais ónár n-úsáideoirí, mar sin ní gá duit fógraí a fheiceáil measctha isteach le do ríomhphoist arís.
 
 <b>Cad is féidir leat a dhéanamh</b>
 <ul>
@@ -11,21 +11,21 @@ Is aip ríomhphoist chumhachtach é Thunderbird atá dírithe ar phríobháideac
 
 <b>Comhoiriúnacht</b>
 <ul>
- <li>Oibríonn Thunderbird le prótacail IMAP agus POP3, ag tacú le raon leathan soláthraithe ríomhphoist, lena n-áirítear Gmail, Outlook, Yahoo Mail, iCloud agus go leor eile.</li>
+ <li>Oibríonn QubesMail le prótacail IMAP agus POP3, ag tacú le raon leathan soláthraithe ríomhphoist, lena n-áirítear Gmail, Outlook, Yahoo Mail, iCloud agus go leor eile.</li>
 </ul>
 
-<b>Cén fáth a úsáid Thunderbird</b>
+<b>Cén fáth a úsáid QubesMail</b>
 <ul>
  <li>An t-ainm iontaofa sa ríomhphost le breis agus 20 bliain - anois ar Android.</li>
- <li>Tá Thunderbird maoinithe go hiomlán ag ranníocaíochtaí deonacha ónár n-úsáideoirí. Ní mian linn do shonraí pearsanta. Ní tusa an táirge riamh.</li>
+ <li>Tá QubesMail maoinithe go hiomlán ag ranníocaíochtaí deonacha ónár n-úsáideoirí. Ní mian linn do shonraí pearsanta. Ní tusa an táirge riamh.</li>
  <li>Déanta ag foireann atá chomh meon éifeachtúil agus atá tú. Teastaíonn uainn nach gcaithfeá ach beagán ama ag baint úsáide as an aip agus an t-uasmhéid a bhaint amach duit.</li>
- <li>Le rannpháirtithe ó gach cearn den domhan, tá Thunderbird for Android aistrithe go níos mó ná 20 teanga.</li>
+ <li>Le rannpháirtithe ó gach cearn den domhan, tá QubesMail for Android aistrithe go níos mó ná 20 teanga.</li>
  <li>Tacaithe ag MZLA Technologies Corporation, fochuideachta faoi lánúinéireacht Fhondúireacht Mozilla.</li>
 </ul>
 
 <b>Foinse Oscailte agus Pobal</b>
 <ul>
- <li>Tá Thunderbird saor in aisce agus foinse oscailte, rud a chiallaíonn gur féidir a chód a fheiceáil, a mhodhnú, a úsáid agus a chomhroinnt go héasca. Cinntíonn a cheadúnas freisin go mbeidh sé saor go deo. Is féidir leat smaoineamh ar Thunderbird mar bhronntanas ó na mílte rannpháirtí duit.</li>
+ <li>Tá QubesMail saor in aisce agus foinse oscailte, rud a chiallaíonn gur féidir a chód a fheiceáil, a mhodhnú, a úsáid agus a chomhroinnt go héasca. Cinntíonn a cheadúnas freisin go mbeidh sé saor go deo. Is féidir leat smaoineamh ar QubesMail mar bhronntanas ó na mílte rannpháirtí duit.</li>
  <li>Déanaimid forbairt go poiblí le nuashonruithe rialta, trédhearcacha ar ár mblag agus ar ár liostaí seoltaí.</li>
- <li>Tá ár dtacaíocht úsáideora faoi thiomáint ag ár bpobal domhanda. Faigh na freagraí atá uait, nó céim isteach i ról an rannpháirtí - bíodh sé ag freagairt ceisteanna, ag aistriú na haipe nó ag insint le do chairde agus do mhuintir faoi Thunderbird.</li>
+ <li>Tá ár dtacaíocht úsáideora faoi thiomáint ag ár bpobal domhanda. Faigh na freagraí atá uait, nó céim isteach i ról an rannpháirtí - bíodh sé ag freagairt ceisteanna, ag aistriú na haipe nó ag insint le do chairde agus do mhuintir faoi QubesMail.</li>
 </ul>

@@ -3,7 +3,7 @@
 This file is not intended for direct reading by users, but rather serves as a configuration file for the documentation
 generator, in this case, **mdbook**. It defines the structure and navigation of the documentation.
 
-[About Thunderbird for Android](about.md)
+[About QubesMail for Android](about.md)
 
 ---
 
@@ -53,7 +53,7 @@ generator, in this case, **mdbook**. It defines the structure and navigation of 
       - [0005 - Central Project Configuration](engineering/adr/0005-central-project-configuration.md)
       - [0006 - White Label Architecture](engineering/adr/0006-white-label-architecture.md)
       - [0007 - Project Structure](engineering/adr/0007-project-structure.md)
-      - [0008 - Change Shared Module package to `net.thunderbird`](engineering/adr/0008-change-shared-modules-package-name.md)
+      - [0008 - Change Shared Module package to `net.qubesmail`](engineering/adr/0008-change-shared-modules-package-name.md)
     - [Rejected]()
     - [Obsolete]()
   - [Technical Designs](engineering/technical-designs/README.md)
@@ -73,7 +73,7 @@ generator, in this case, **mdbook**. It defines the structure and navigation of 
   - [Database Migration Checklist](developer/db-migration-checklist.md)
   - [Foldable Device Support](developer/foldable-device-support.md)
   - [Preference Migration Guide](developer/preference-migration-guide.md)
-  - [Thunderbird Mobile Components](developer/thunderbird-mobile-components.md)
+  - [QubesMail Mobile Components](developer/qubesmail-mobile-components.md)
 - [Release]()
   - [Release Process](release/RELEASE.md)
   - [Release Automation](release/AUTOMATION.md)

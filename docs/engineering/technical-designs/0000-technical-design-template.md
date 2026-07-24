@@ -1,6 +1,6 @@
 # Technical Design: Title
 
-- Issue: [#NNNN](https://github.com/thunderbird/thunderbird-android/issues/NNNN)
+- Issue: [#NNNN](https://github.com/qubesmail/qubesmail-android/issues/NNNN)
 - RFC: [RFC Title](../rfcs/NNNN-title.md)
 - ADR: [ADR Title](../adr/NNNN-title.md)
 - Status: **Proposed**

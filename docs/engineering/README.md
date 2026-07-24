@@ -69,7 +69,7 @@ flowchart TD
 
 The process is built on three pillars that serve different purposes and audiences:
 
-1. **Roadmap**: The high-level layer managed through **Notion Epics** and **Notion Milestones**. The roadmap is the leading influence for Thunderbird maintainers. This is used for high-level reporting and resource planning.
+1. **Roadmap**: The high-level layer managed through **Notion Epics** and **Notion Milestones**. The roadmap is the leading influence for QubesMail maintainers. This is used for high-level reporting and resource planning.
 2. **Public Delivery**: The public project management layer. We use **GitHub Milestone Issues**, **GitHub Feature Issues**, and **GitHub Task Issues** to track *what* is being delivered and *when*. This is the source of truth for all delivery work, including milestone creation and technical planning, and the layer visible to external contributors.
 3. **Proposals & Decisions**: Technical documentation (User Journeys, RFCs, ADRs, Technical Designs) stored in the repository. These define *why* and *how* we build things. They are the durable technical record for all contributors and maintainers.
 
@@ -89,7 +89,7 @@ Roadmap artifacts are used to track work against the project's long-term goals. 
 
 #### Notion Epic
 
-A Notion epic is an internal roadmap artifact and the leading influence for Thunderbird maintainers.
+A Notion epic is an internal roadmap artifact and the leading influence for QubesMail maintainers.
 
 A Notion epic is typically split into multiple **GitHub Milestone Issues**. Each GitHub Milestone Issue is created in GitHub, synced to Notion as a **Notion Milestone**, and then linked back to the epic to track progress against the roadmap goal.
 

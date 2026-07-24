@@ -1,6 +1,6 @@
 # Switch Test Assertions from Truth to assertk
 
-- Pull Request: [#7242](https://github.com/thunderbird/thunderbird-android/pull/7242)
+- Pull Request: [#7242](https://github.com/qubesmail/qubesmail-android/pull/7242)
 
 ## Status
 

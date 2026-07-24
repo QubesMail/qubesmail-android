@@ -1,1 +1,1 @@
-El Thunderbird és una aplicació de correu electrònic de codi obert i centrada en la privadesa.
+El QubesMail és una aplicació de correu electrònic de codi obert i centrada en la privadesa.

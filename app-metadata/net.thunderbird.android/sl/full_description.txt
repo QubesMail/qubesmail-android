@@ -1,4 +1,4 @@
-Thunderbird je zmogljiv e-poštni program, ki se osredotoča na zasebnost. V enem program lahko brez težav upravljate z več e-poštnimi računi, za največjo produktivnost pa lahko uporabite poenoteno mapo Prejeto. Ker je  grajen na odprtokodni tehnologiji in ga poleg globalne skupnosti  prostovoljcev podpira predana ekipa razvijalcev Thunderbird vaših zasebnih podatkov nikoli ne smatra kot izdelek. Finančno ga podpirajo izključno naši uporabniki, tako da v svojih sporočilih ne boste nikoli več videli oglasov.
+QubesMail je zmogljiv e-poštni program, ki se osredotoča na zasebnost. V enem program lahko brez težav upravljate z več e-poštnimi računi, za največjo produktivnost pa lahko uporabite poenoteno mapo Prejeto. Ker je  grajen na odprtokodni tehnologiji in ga poleg globalne skupnosti  prostovoljcev podpira predana ekipa razvijalcev QubesMail vaših zasebnih podatkov nikoli ne smatra kot izdelek. Finančno ga podpirajo izključno naši uporabniki, tako da v svojih sporočilih ne boste nikoli več videli oglasov.
 
 <b>Kaj lahko storite</b>
 <ul>
@@ -11,21 +11,21 @@ Thunderbird je zmogljiv e-poštni program, ki se osredotoča na zasebnost. V ene
 
 <b>Združljivost</b>
 <ul>
-  <li>Thunderbird deluje s protokoli IMAP in POP3 in podpira širok nabor ponudnikov, vključno z Gmailom, Outlookom, Pošto Yahoo, iCloudom in več.</li>
+  <li>QubesMail deluje s protokoli IMAP in POP3 in podpira širok nabor ponudnikov, vključno z Gmailom, Outlookom, Pošto Yahoo, iCloudom in več.</li>
 </ul>
 
-<b>Zakaj uporabljati Thunderbird</b>
+<b>Zakaj uporabljati QubesMail</b>
 <ul>
   <li>Zaupanja vredno ime v e-pošti že več kot 20 let - sedaj na Androidu.</li>
-  <li>Thunderbird v celoti financirajo prostovoljni prispevki naših uporabnikov. Ne rudarimo za vašimi osebnim i podatki. Nikoli niste izdelek.</li>
+  <li>QubesMail v celoti financirajo prostovoljni prispevki naših uporabnikov. Ne rudarimo za vašimi osebnim i podatki. Nikoli niste izdelek.</li>
   <li>Naredila ga je ekipa, ki se, tako kot vi, osredotoča na učinkovitost. Želimo si, da program uporabljate kar najmanj časa in nazaj dobite kar največ.</li>
-  <li>Prostovoljci iz celega sveta so Thunderbird za Android prevedli v več kot 20 jezikov.</li>
+  <li>Prostovoljci iz celega sveta so QubesMail za Android prevedli v več kot 20 jezikov.</li>
   <li>Podpira ga hčerinsko podjetje organizacije Mozilla MZLA Technologies Corporation.</li>
 </ul>
 
 <b>Odprta koda in skupnost</b>
 <ul>
-  <li>Thunderbird je prost in odprtokoden, kar pomeni, da si njegovo kodo lahko vsi prosto ogledajo,  uporabljajo, jo spreminjajo in delijo. Njegovo dovoljenje hkrati zagotavlja, da bo vedno brezplačen. Na Thunderbird lahko gledate kot na darilo od tisočih prostovoljcev, kot ste vi.</li>
+  <li>QubesMail je prost in odprtokoden, kar pomeni, da si njegovo kodo lahko vsi prosto ogledajo,  uporabljajo, jo spreminjajo in delijo. Njegovo dovoljenje hkrati zagotavlja, da bo vedno brezplačen. Na QubesMail lahko gledate kot na darilo od tisočih prostovoljcev, kot ste vi.</li>
   <li>Razvijamo ga na odprtem z rednimi, transparentnimi posodobitvami na našem blogu in dopisnimi seznami.</li>
-  <li>Naša podpora uporabnikom sestavlja globalna skupnost. Poiščite odgovore, ki jih potrebujete, ali pa si stopite v vlogo prostovoljca - naj bo to odgovarjanje na vprašanja, prevajanje programa ali pa enostavno seznanite svoje prijatelje in družino s Thunderbirdom.</li>
+  <li>Naša podpora uporabnikom sestavlja globalna skupnost. Poiščite odgovore, ki jih potrebujete, ali pa si stopite v vlogo prostovoljca - naj bo to odgovarjanje na vprašanja, prevajanje programa ali pa enostavno seznanite svoje prijatelje in družino s QubesMailom.</li>
 </ul>

@@ -1,5 +1,5 @@
-{% if application == 'thunderbird' %}
-Thunderbird version {{ version }}
+{% if application == 'qubesmail' %}
+QubesMail version {{ version }}
 {% else %}
 K-9 Mail version {{ version }}
 {% endif -%}

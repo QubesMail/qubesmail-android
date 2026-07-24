@@ -1,1 +1,1 @@
-Thunderbird is a 100% Open Source, privacy-focused email app.
+QubesMail is a 100% Open Source, privacy-focused email app.

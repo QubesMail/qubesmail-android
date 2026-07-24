@@ -20,5 +20,5 @@ S’è vo scuntrate qualchì penseru cù K-9 Mail, dumandate aiutu nant’à u n
 <b>Vulete aiutà ?</b>
 
 K-9 Mail hè un prughjettu sviluppatu da a cumunità. S’è vo vulete aiutacci à amendà l’appiecazione, righjunghjiteci !
-Truverete u nostru sistema di ghjestione di prublemi, u nostru codice di fonte è u nostru wiki à l’indirizzu <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Truverete u nostru sistema di ghjestione di prublemi, u nostru codice di fonte è u nostru wiki à l’indirizzu <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Simu sempre felice d’accoglie amichi novi per sviluppà, cuncepisce, ducumentà, traduce o fà a ghjestione di i prublemi.

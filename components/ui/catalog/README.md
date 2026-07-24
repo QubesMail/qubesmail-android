@@ -1,8 +1,8 @@
-# Thunderbird UI Catalog
+# QubesMail UI Catalog
 
 Uses [`:ui:bolt`](../bolt/README.md).
 
-This is a catalog of all the components in the Thunderbird design system.
+This is a catalog of all the components in the QubesMail design system.
 
 Build it from the components build:
 

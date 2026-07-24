@@ -1,7 +1,7 @@
 # 📝 Managing Strings & Languages
 
 This document explains how developers manage our English **source strings** and add/remove **languages** in the
-Thunderbird for Android project.
+QubesMail for Android project.
 
 > [!NOTE]
 > Translators: If you want to contribute translations, see [Translations](translations.md).
@@ -13,7 +13,7 @@ Thunderbird for Android project.
 * We use [Compose Multiplatform Resources](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-resources.html) for localizing strings in Kotlin Multiplatform (KMP) modules.
 * **Source language** is **English** (American English, represented as `en`).
 * **Source strings** are modified only in this repository (via pull requests).
-* **Translations** are managed exclusively in [Weblate](https://hosted.weblate.org/projects/thunderbird/thunderbird-android/) and merged into the repository via the [Translation - Update](https://github.com/thunderbird/thunderbird-android/actions/workflows/translation-update.yml) workflow.
+* **Translations** are managed exclusively in [Weblate](https://hosted.weblate.org/projects/qubesmail/qubesmail-android/) and merged into the repository via the [Translation - Update](https://github.com/qubesmail/qubesmail-android/actions/workflows/translation-update.yml) workflow.
 * **Languages** are added/removed when they reach 70% translation or fall below 60%.
 
 ## 🔄 Changing Source Strings
@@ -37,11 +37,11 @@ Stored in `src/commonMain/composeResources/values/strings.xml`.
 To use Compose Multiplatform Resources in a module, follow these steps in your `build.gradle.kts`:
 
 1. **Apply the plugin:**
-   Use `ThunderbirdPlugins.Library.kmpCompose` for a KMP library module with Compose support.
+   Use `QubesMailPlugins.Library.kmpCompose` for a KMP library module with Compose support.
 
    ```kotlin
    plugins {
-       id(ThunderbirdPlugins.Library.kmpCompose)
+       id(QubesMailPlugins.Library.kmpCompose)
    }
    ```
 2. **Configure `compose.resources` block:**
@@ -50,7 +50,7 @@ To use Compose Multiplatform Resources in a module, follow these steps in your `
    ```kotlin
    compose.resources {
        publicResClass = false
-       packageOfResClass = "net.thunderbird.feature.yourfeature.resources"
+       packageOfResClass = "net.qubesmail.feature.yourfeature.resources"
    }
    ```
 3. **Ensure `android` namespace is set:**
@@ -59,7 +59,7 @@ To use Compose Multiplatform Resources in a module, follow these steps in your `
    ```kotlin
    kotlin {
        android {
-           namespace = "net.thunderbird.feature.yourfeature.api"
+           namespace = "net.qubesmail.feature.yourfeature.api"
        }
    }
    ```
@@ -69,11 +69,11 @@ To use Compose Multiplatform Resources in a module, follow these steps in your `
 If a **mechanical or global change** to translations is required (for example, renaming placeholders or fixing formatting across all languages), follow this workflow:
 
 1. **Lock components in Weblate:**
-   Go to the [maintenance page](https://hosted.weblate.org/projects/thunderbird/thunderbird-android/#repository) and lock all components to prevent new translations during the change.
+   Go to the [maintenance page](https://hosted.weblate.org/projects/qubesmail/qubesmail-android/#repository) and lock all components to prevent new translations during the change.
 2. **Commit outstanding changes:**
    Ensure all pending translations in Weblate are committed to its internal Git repository.
 3. **Pull latest translations:**
-   Trigger the [Translation - Update](https://github.com/thunderbird/thunderbird-android/actions/workflows/translation-update.yml) GitHub workflow manually using `workflow_dispatch`.
+   Trigger the [Translation - Update](https://github.com/qubesmail/qubesmail-android/actions/workflows/translation-update.yml) GitHub workflow manually using `workflow_dispatch`.
 4. **Merge the pull request:**
    Review and merge the resulting PR to ensure your local `main` branch is in sync with Weblate.
 5. **Apply your change:**
@@ -177,7 +177,7 @@ val messagesCount = getPluralString(Res.plurals.new_messages, count, count)
 
 ## 🔀 Merging Translations
 
-Translations are merged from Weblate via an automated [GitHub workflow](https://github.com/thunderbird/thunderbird-android/actions/workflows/translation-update.yml). This workflow:
+Translations are merged from Weblate via an automated [GitHub workflow](https://github.com/qubesmail/qubesmail-android/actions/workflows/translation-update.yml). This workflow:
 1. Fetches the latest changes from Weblate's Git export.
 2. Creates a pull request with the updated translation files.
 3. Preserves contributor attribution via `Co-authored-by` trailers.
@@ -251,7 +251,7 @@ For more details, see the [Weblate CLI README](../../cli/weblate-cli/README.md).
 ### ➖ Removing a Language
 
 1. Remove language code from `androidResources.localeFilters` in:
-   * `app-thunderbird/build.gradle.kts`
+   * `app-qubesmail/build.gradle.kts`
    * `app-k9mail/build.gradle.kts`
 2. Remove entry from `supported_languages` in:
    * `app/core/src/main/res/values/arrays_general_settings_values.xml`
@@ -277,6 +277,6 @@ When a new module contains translatable strings, a new Weblate component must be
 Android sometimes uses codes that differ from Weblate (e.g. Hebrew = `iw` in Android but `he` in Weblate).
 
 Automation tools must map between systems.
-See [LanguageCodeLoader.kt](https://github.com/thunderbird/thunderbird-android/blob/main/cli/translation-cli/src/main/kotlin/net/thunderbird/cli/translation/LanguageCodeLoader.kt#L12-L13) for an example.
+See [LanguageCodeLoader.kt](https://github.com/qubesmail/qubesmail-android/blob/main/cli/translation-cli/src/main/kotlin/net/qubesmail/cli/translation/LanguageCodeLoader.kt#L12-L13) for an example.
 
 You could find a more complete list of differences in the [Android documentation](https://developer.android.com/guide/topics/resources/localization#LocaleCodes) and [Unicode and internationalization support](https://developer.android.com/guide/topics/resources/internationalization)

@@ -20,5 +20,5 @@ K-9 Mail 是一個開放原始碼的電子郵件客戶端，幾乎可以與所�
 
 
 K-9 Mail 是一個由社群開發的專案。如果您有興趣幫助改進這個應用程式，請加入我們！
-您可以在 <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> 找到我們的問題追蹤器、原始碼和維基。
+您可以在 <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> 找到我們的問題追蹤器、原始碼和維基。
 我們隨時歡迎新的開發者、設計師、文件編寫者、翻譯者、錯誤排除者和朋友。

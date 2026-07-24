@@ -20,5 +20,5 @@ K-9 דוא"ל הוא לקוח דואר אלקטרוני קוד פתוח שעוב
 <b>רוצים לעזור?</b>
 
 K-9 דוא"ל הוא פרויקט שפותח ע"י הקהילה. אם אתם מעוניינים לעזור לשפר את האפליקציה, אנא הצטרפו אלינו!
-אתם יכולים למצוא את עוקב הבאגים שלנו, קוד המקור, ו wiki ב <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+אתם יכולים למצוא את עוקב הבאגים שלנו, קוד המקור, ו wiki ב <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 אנחנו תמיד שמחים לקבל מפתחים חדשים, מעצבים, מתעדים, מתרגמים, מדבגי באגים וחברים.

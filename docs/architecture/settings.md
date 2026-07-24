@@ -1,6 +1,6 @@
 # ⚙️ Settings Architecture
 
-This document describes the settings architecture in Thunderbird for Android, explaining how preferences are organized,
+This document describes the settings architecture in QubesMail for Android, explaining how preferences are organized,
 stored, and upgraded.
 
 ## 🏗️ Overview

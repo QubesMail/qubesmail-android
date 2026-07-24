@@ -1,14 +1,14 @@
 # User Journey: Title
 
 - Status: **Proposed**
-- Milestone issue: [#NNNN](https://github.com/thunderbird/thunderbird-android/issues/NNNN)
+- Milestone issue: [#NNNN](https://github.com/qubesmail/qubesmail-android/issues/NNNN)
 - Related feature issues:
-  - [#NNNN](https://github.com/thunderbird/thunderbird-android/issues/NNNN)
+  - [#NNNN](https://github.com/qubesmail/qubesmail-android/issues/NNNN)
 - Design/research links:
 
 ## Product Value
 
-What problem does this solve for Thunderbird for Android users?
+What problem does this solve for QubesMail for Android users?
 
 What is the core value users should get from this feature or workflow?
 

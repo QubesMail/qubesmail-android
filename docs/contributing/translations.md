@@ -1,11 +1,11 @@
 # 🌐 Translations
 
-This document explains how you can help translate Thunderbird for Android into your language.
+This document explains how you can help translate QubesMail for Android into your language.
 
-- All translations for Thunderbird for Android are managed in [Thunderbird for Android Weblate project](https://hosted.weblate.org/projects/thunderbird/thunderbird-android/).
+- All translations for QubesMail for Android are managed in [QubesMail for Android Weblate project](https://hosted.weblate.org/projects/qubesmail/qubesmail-android/).
 - The Source language is **English** (American English, represented as `en`).
 - Translations are done only in Weblate, not in this repository.
-- The Thunderbird team regularly syncs Weblate with the repository to pull in translation updates.
+- The QubesMail team regularly syncs Weblate with the repository to pull in translation updates.
 
 > [!NOTE]
 > If you are a developer and need to add or manage strings or languages in the codebase, see [managing strings](managing-strings.md).
@@ -14,10 +14,10 @@ This document explains how you can help translate Thunderbird for Android into y
 
 Before contributing, familiarize yourself with [documentation](https://docs.weblate.org/en/latest/).
 
-To start translating Thunderbird for Android:
+To start translating QubesMail for Android:
 
 1. Create a [Weblate account](https://hosted.weblate.org/accounts/signup/).
-2. Go to the [Thunderbird for Android Weblate project](https://hosted.weblate.org/projects/thunderbird/thunderbird-android/).
+2. Go to the [QubesMail for Android Weblate project](https://hosted.weblate.org/projects/qubesmail/qubesmail-android/).
 3. Select your language from the list of languages.
 4. Start translating strings through the Weblate web interface.
 
@@ -61,7 +61,7 @@ To propose yourself as a reviewer:
    My Weblate username is [Your Username].  
    Here is a link to my contributions: [Your Weblate Profile or Component Link].
    ```
-4. The Thunderbird team will review your request and grant reviewer rights for that language if appropriate.
+4. The QubesMail team will review your request and grant reviewer rights for that language if appropriate.
 
 ## 🌍 Requesting a New Language
 
@@ -73,7 +73,7 @@ To propose a new language:
 2. Post a short message like:
 
    ```text
-   Hi, I would like to request adding a new language to Thunderbird for Android.  
+   Hi, I would like to request adding a new language to QubesMail for Android.  
    Language: [Language Name]  
    Code: [e.g., fr, pt_BR]
    Any special notes: [Optional]
@@ -85,5 +85,5 @@ Inclusion into the app follows our translation coverage policy, see [Adding or R
 
 ## 🙏 Thank You!
 
-Every translation improves Thunderbird for Android for users worldwide.
+Every translation improves QubesMail for Android for users worldwide.
 We greatly appreciate your help in making the app accessible in more languages!

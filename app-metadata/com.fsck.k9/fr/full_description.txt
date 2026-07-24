@@ -20,5 +20,5 @@ Si vous rencontrez des difficultés avec Courriel K-9 Mail, demandez de l’ai
 <b>Voulez-vous aider ?</b>
 
 Courriel K-9 Mail est un projet développé par la communauté. Si vous souhaitez contribuer à l’amélioration de l’appli, joignez-vous à nous.
-Vous trouverez notre système de suivi des bogues, notre code source et notre wiki à l’adresse <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Vous trouverez notre système de suivi des bogues, notre code source et notre wiki à l’adresse <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Nous sommes toujours heureux d’accueillir de nouveaux développeurs, concepteurs, documentalistes, traducteurs, responsables du suivi des bogues et amis de tous genres.

@@ -20,5 +20,5 @@ Jika Anda mengalami kendala dengan Surel K-9, mintalah bantuan di forum bantuan 
 <b> Ingin membantu?</b>
 
 Surel K-9 adalah sebuah proyek urun daya. Jika Anda tertarik untuk membantu meningkatkan aplikasi ini, silakan bergabung dengan kami!
-Anda dapat menemukan pelacakan masalah, kode sumber, dan wiki kami di <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Anda dapat menemukan pelacakan masalah, kode sumber, dan wiki kami di <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Dengan senang hati selalu kami sambut para pengembang, desainer, dokumenter, penerjemah, pengidentifikasi masalah, dan teman-teman baru pada proyek kami.

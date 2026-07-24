@@ -20,5 +20,5 @@ Dacă întâmpini probleme cu K-9 Mail, cere ajutor pe <a href="https://forum.k9
 <b>Vrei să ajuți?</b>
 
 K-9 Mail este un proiect dezvoltat de comunitate. Dacă ești interesat să ajuți la îmbunătățirea aplicației, alătură-te!
-Poți găsi instrumentul nostru de urmărire a erorilor, codul sursă și wiki la <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a> .
+Poți găsi instrumentul nostru de urmărire a erorilor, codul sursă și wiki la <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a> .
 Suntem întotdeauna bucuroși să primim noi dezvoltatori, designeri, documentatori, traducători, trieri de erori și prieteni.

@@ -20,5 +20,5 @@ Si tienes problemas con K-9 Mail pide ayuda en nuestro foro de <a href="https://
 <b>¿Quieres ayudar?</b>
 
 K-9 Mail es un proyecto desarrollado por la comunidad. Si estás interesado en ayudar a mejorar la aplicación, ¡únete a nosotros!
-Puedes informar de errores, ver el código fuente y la wiki en <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Puedes informar de errores, ver el código fuente y la wiki en <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Siempre estamos encantados de dar la bienvenida a nuevos desarrolladores, diseñadores, gente que mejore la documentación, traductores, probadores y amigos.

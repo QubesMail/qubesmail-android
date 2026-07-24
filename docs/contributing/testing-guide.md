@@ -1,6 +1,6 @@
 # 🧪 Testing Guide
 
-This document outlines the testing practices and guidelines for the Thunderbird for Android project.
+This document outlines the testing practices and guidelines for the QubesMail for Android project.
 
 **Key Testing Principles:**
 - Follow the Arrange-Act-Assert (AAA) pattern

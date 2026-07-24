@@ -1,4 +1,4 @@
-Thunderbird er en kraftig og privatlivsfokusert e-post-app. Sømløst send og skriv e-post fra flere kontoer gjennom bare en app, med en samlet innboks for maksimal produktivitet. Med grunnlag i teknologi med åpen kildekode og støtte fra et dedikert team med utviklere og et globalt samfunn frivillige, så kommer Thunderbird aldri til å behandle dine private data som et produkt. Thunderbird er bare støttet finansielt av brukerbidrag, så du kommer aldri til å se reklame innblandet i e-postene dine igjen.
+QubesMail er en kraftig og privatlivsfokusert e-post-app. Sømløst send og skriv e-post fra flere kontoer gjennom bare en app, med en samlet innboks for maksimal produktivitet. Med grunnlag i teknologi med åpen kildekode og støtte fra et dedikert team med utviklere og et globalt samfunn frivillige, så kommer QubesMail aldri til å behandle dine private data som et produkt. QubesMail er bare støttet finansielt av brukerbidrag, så du kommer aldri til å se reklame innblandet i e-postene dine igjen.
 
 <b>Hva kan du gjøre</b>
 <ul>
@@ -11,21 +11,21 @@ Thunderbird er en kraftig og privatlivsfokusert e-post-app. Sømløst send og sk
 
 <b>Kompatibilitet</b>
 <ul>
-  <li>Thunderbird fungerer med IMAP- og POP3-protokollene, i tillegg til en lang rekke e-posttjenere, blant annet Gmail, Outlook, Yahoo Mail, iCloud, og flere.</li>
+  <li>QubesMail fungerer med IMAP- og POP3-protokollene, i tillegg til en lang rekke e-posttjenere, blant annet Gmail, Outlook, Yahoo Mail, iCloud, og flere.</li>
 </ul>
 
-<b>Hvorfor bruke Thunderbird</b>
+<b>Hvorfor bruke QubesMail</b>
 <ul>
   <li>Et pålitelig navn innen e-post i 20 år - nå på Android.</li>
-  <li>Thunderbird er finansiert av frivillige bidrag fra brukerene våre. Vi selger ikke dine personlige data. Du er aldri produktet.</li>
+  <li>QubesMail er finansiert av frivillige bidrag fra brukerene våre. Vi selger ikke dine personlige data. Du er aldri produktet.</li>
   <li>Lagd av et team som er like besatt av effektivitet som deg. Vi vil bruke minimalt med tid i appen, med best mulig resultat.</li>
-  <li>Med bidrag fra hele verden, Thunderbird for Android har blitt oversatt til over 20 språk.</li>
+  <li>Med bidrag fra hele verden, QubesMail for Android har blitt oversatt til over 20 språk.</li>
   <li>Støttet av MZLA Technologies Corporation, et heleid underselskap til Mozilla Foundation.</li>
 </ul>
 
 <b>Åpen kildekode og samfunn</b>
 <ul>
-  <li>Thunderbird er bygd på fri og åpen kildekode, hvilket betyr at koden til programmet er fritt tilgjengelig til å sees på, modifisere, og dele videre. Lisensen forsikrer også at den vil forbli fri for alltid. Du kan se for deg Thunderbird som en gave fra flere tusenvis av bidragsytere, til deg.</li>
-  <li>Vi utvikler Thunderbird i det åpne med regelmessige, transparente oppdateringer på bloggen vår og e-postlisten vår.</li>
-  <li>Brukerstøtten vår driver av vårt globale samfunn. Finn svarene du trenger, eller bli en bidragsyter selv, enten det er gjennom å svare på spørsmål, oversette appen, eller fortelle vennene dine og familien din om Thunderbird.</li>
+  <li>QubesMail er bygd på fri og åpen kildekode, hvilket betyr at koden til programmet er fritt tilgjengelig til å sees på, modifisere, og dele videre. Lisensen forsikrer også at den vil forbli fri for alltid. Du kan se for deg QubesMail som en gave fra flere tusenvis av bidragsytere, til deg.</li>
+  <li>Vi utvikler QubesMail i det åpne med regelmessige, transparente oppdateringer på bloggen vår og e-postlisten vår.</li>
+  <li>Brukerstøtten vår driver av vårt globale samfunn. Finn svarene du trenger, eller bli en bidragsyter selv, enten det er gjennom å svare på spørsmål, oversette appen, eller fortelle vennene dine og familien din om QubesMail.</li>
 </ul>

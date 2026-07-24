@@ -1,6 +1,6 @@
-# Thunderbird Core Logging Module
+# QubesMail Core Logging Module
 
-This module provides a flexible and extensible logging system for Thunderbird for Android.
+This module provides a flexible and extensible logging system for QubesMail for Android.
 
 ## Architecture
 

@@ -1,4 +1,4 @@
-# AI Agent Guide for Thunderbird for Android
+# AI Agent Guide for QubesMail for Android
 
 This file defines requirements for AI coding agents and automated systems contributing to this repository.
 
@@ -15,11 +15,11 @@ These requirements apply to:
 
 ## Repository Context
 
-Thunderbird for Android is a privacy-focused email client.
+QubesMail for Android is a privacy-focused email client.
 
 The repository implements a white-label architecture producing:
 
-- `app-thunderbird`: Thunderbird for Android
+- `app-qubesmail`: QubesMail for Android
 - `app-k9mail`: K-9 Mail
 
 Project documentation resides in the `docs/` directory.
@@ -135,7 +135,7 @@ Privacy is a core value of this project.
 
 Agents MUST:
 
-- Use `net.thunderbird.core.logging.Logger` via dependency injection
+- Use `net.qubesmail.core.logging.Logger` via dependency injection
 - NEVER log PII (Personally Identifiable Information)
 - NEVER log credentials, passwords, or authentication tokens
 - NEVER log message content or email addresses
@@ -164,7 +164,7 @@ Before proposing changes, agents MUST run the narrowest relevant Gradle tasks an
 
 - `./gradlew assemble`
 - `./gradlew build`
-- `./gradlew :app-thunderbird:assembleDebug`
+- `./gradlew :app-qubesmail:assembleDebug`
 - `./gradlew :app-k9mail:assembleDebug`
 
 ### Tests

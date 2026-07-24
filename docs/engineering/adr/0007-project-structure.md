@@ -1,7 +1,7 @@
 # Project Structure
 
-- Issue: [#7852](https://github.com/thunderbird/thunderbird-android/issues/7852)
-- Pull Request: [#7829](https://github.com/thunderbird/thunderbird-android/pull/7829)
+- Issue: [#7852](https://github.com/qubesmail/qubesmail-android/issues/7852)
+- Pull Request: [#7829](https://github.com/qubesmail/qubesmail-android/pull/7829)
 
 ## Status
 
@@ -34,8 +34,8 @@ graph TD
             K-9 Mail
         `"]
         APP_TB["`
-            **:app-thunderbird**
-            Thunderbird for Android
+            **:app-qubesmail**
+            QubesMail for Android
         `"]
     end
 
@@ -90,8 +90,8 @@ graph TD
             K-9 Mail
         `"]
         APP_TB["`
-            **:app-thunderbird**
-            Thunderbird for Android
+            **:app-qubesmail**
+            QubesMail for Android
         `"]
     end
 

@@ -15,7 +15,7 @@ python3 -m pip install -r scripts/requirements.txt
 ### Available Scripts
 
 **CI Scripts** (`ci/`)
-- `render-notes.py` - Fetches and renders release notes from thunderbird-notes
+- `render-notes.py` - Fetches and renders release notes from qubesmail-notes
 - `setup_release_automation` - Sets up GitHub release automation environments
 - `merges/merge_gradle.py` - Custom git merge driver for Gradle files
 

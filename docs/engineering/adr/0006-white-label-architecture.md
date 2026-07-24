@@ -1,7 +1,7 @@
 # White Label Architecture
 
-- Issue: [#7807](https://github.com/thunderbird/thunderbird-android/issues/7807)
-- Pull Request: [#7805](https://github.com/thunderbird/thunderbird-android/pull/7805)
+- Issue: [#7807](https://github.com/qubesmail/qubesmail-android/issues/7807)
+- Pull Request: [#7805](https://github.com/qubesmail/qubesmail-android/pull/7805)
 
 ## Status
 

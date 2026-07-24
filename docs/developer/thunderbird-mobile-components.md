@@ -1,20 +1,20 @@
-# Thunderbird Mobile Components
+# QubesMail Mobile Components
 
-[`thunderbird-mobile-components`](https://github.com/thunderbird/thunderbird-mobile-components) contains shared
-Thunderbird mobile components that can be versioned, built, tested, and released independently from Thunderbird for
+[`qubesmail-mobile-components`](https://github.com/qubesmail/qubesmail-mobile-components) contains shared
+QubesMail mobile components that can be versioned, built, tested, and released independently from QubesMail for
 Android.
 
 Components are consumed through focused artifacts. Do not depend on a broad "all components" artifact; add only the
 component groups a module actually needs.
 
-[**Bolt**](https://bolt.thunderbird.net/) is the Compose UI component group. It contains the design-system components,
-theme support, and common UI support used by Thunderbird for Android.
+[**Bolt**](https://bolt.qubesmail.net/) is the Compose UI component group. It contains the design-system components,
+theme support, and common UI support used by QubesMail for Android.
 
 ## Coordinates
 
 Dependency aliases are declared in `gradle/libs.versions.toml`:
 
-- `libs.tb.mobile.components.ui.bolt` -> `net.thunderbird.components.ui.bolt:bolt`
+- `libs.tb.mobile.components.ui.bolt` -> `net.qubesmail.components.ui.bolt:bolt`
 
 Common UI support, design-system components, and theme support are packaged as part of the Bolt artifact.
 
@@ -33,20 +33,20 @@ The Bolt component version is managed by `libs.versions.tbMobileComponents`.
 The root `settings.gradle.kts` includes the local `components/` build and substitutes the tracked Bolt coordinates by
 default:
 
-- `net.thunderbird.components.ui.bolt:bolt` -> `:components:ui:bolt`
-- `net.thunderbird.components.ui:testing` -> `:components:ui:testing`
+- `net.qubesmail.components.ui.bolt:bolt` -> `:components:ui:bolt`
+- `net.qubesmail.components.ui:testing` -> `:components:ui:testing`
 
 Disable local component substitution when testing released artifacts with:
 
 ```shell
-./gradlew -Ptb.components.local=false :app-thunderbird:assembleDebug
+./gradlew -Ptb.components.local=false :app-qubesmail:assembleDebug
 ```
 
 Control Bolt substitution independently with `tb.components.local.bolt`. This is useful when testing released component
 artifacts for everything else while still working on Bolt locally:
 
 ```shell
-./gradlew -Ptb.components.local=false -Ptb.components.local.bolt=true :app-thunderbird:assembleDebug
+./gradlew -Ptb.components.local=false -Ptb.components.local.bolt=true :app-qubesmail:assembleDebug
 ```
 
 Build Bolt directly from the included build when working on the components. In this command, `:ui:bolt`
@@ -63,4 +63,4 @@ Build the Bolt catalog directly from the components build:
 ```
 
 Do not add a broad dependency on all components. Add new coordinates and substitutions only for component groups that
-Thunderbird for Android actually consumes.
+QubesMail for Android actually consumes.

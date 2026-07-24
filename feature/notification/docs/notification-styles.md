@@ -1,4 +1,4 @@
-# Thunderbird for Android Notification System - Notification Styles deep-dive
+# QubesMail for Android Notification System - Notification Styles deep-dive
 
 ## System Notifications Styles
 

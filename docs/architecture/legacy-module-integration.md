@@ -9,7 +9,7 @@ newer modules to interact with legacy functionality without becoming directly de
 
 ## Overview
 
-The Thunderbird for Android project is transitioning from a monolithic architecture to a modular one. During this
+The QubesMail for Android project is transitioning from a monolithic architecture to a modular one. During this
 transition, we need to maintain compatibility with existing legacy code while gradually migrating to the new
 architecture. The `legacy:*`, `mail:*`, and `backend:*` modules contain functionality that is still essential for the
 project but does not yet adhere to the new modular architecture. These modules are integrated into the new architecture
@@ -381,7 +381,7 @@ The legacy module integration diagram below explains how legacy code is integrat
 graph TB
     subgraph APP[App Modules]
         direction TB
-        APP_TB["`**:app-thunderbird**<br>Thunderbird for Android`"]
+        APP_TB["`**:app-qubesmail**<br>QubesMail for Android`"]
         APP_K9["`**:app-k9mail**<br>K-9 Mail`"]
     end
 

@@ -20,5 +20,5 @@ Nëse keni problem me K-9 Mail, kërkoni ndihmë te <a href="https://forum.k9mai
 <b>Dëshironi të ndihmoni?</b>
 
 K-9 Mail është një projekt i zhvilluar nga bashkësia. Nëse interesoheni të ndihmoni në përmirësimin e aplikacionit, ju lutemi, ejani te ne!
-Ndjekësin tonë të të metave, kodin burim dhe wiki-n mund t’i gjeni te <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Ndjekësin tonë të të metave, kodin burim dhe wiki-n mund t’i gjeni te <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Jemi përherë të gëzuar të mirëpresim zhvillues, hartues grafikë, dokumentues, përkthyes, trajtues të metash dhe shokë të rinj.

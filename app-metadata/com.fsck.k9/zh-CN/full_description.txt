@@ -20,5 +20,5 @@ K-9 Mail 是一款开源电子邮件客户端，基本上可与所有邮件服�
 <b>想要帮忙吗？</b>
 
 K-9 Mail 是一个社区开发项目。如果您有兴趣帮助改进应用，请加入我们！
-您可以在此找到我们的错误跟踪器、源代码和维基 <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>。
+您可以在此找到我们的错误跟踪器、源代码和维基 <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>。
 我们随时欢迎新的开发人员、设计人员、文档编写人员、翻译人员、测试人员和朋友加入我们。

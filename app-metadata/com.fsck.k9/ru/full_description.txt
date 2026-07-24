@@ -20,5 +20,5 @@ K-9 Mail — это почтовый клиент с открытым исход
 <b>Желаете помочь?</b>
 
 Почта K-9 — это проект, разрабатываемый сообществом. Если вы заинтересованы в улучшении приложения, пожалуйста, присоединяйтесь к нам!
-Вы можете найти наш трекер ошибок, исходный код и вики на <a href="https://github.com/thunderbird/thunderbird-android">https://github.com/thunderbird/thunderbird-android</a>.
+Вы можете найти наш трекер ошибок, исходный код и вики на <a href="https://github.com/qubesmail/qubesmail-android">https://github.com/qubesmail/qubesmail-android</a>.
 Мы всегда рады новым разработчикам, дизайнерам, документаторам, переводчикам, тестировщикам и друзьям.

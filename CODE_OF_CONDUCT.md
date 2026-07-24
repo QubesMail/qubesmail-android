@@ -1,6 +1,6 @@
 # Code of Conduct
 
-It is our intention that our repository remains a useful tool for reporting and commenting on bugs, feature requests, and tasks for the Thunderbird community. No single contributor's work outweighs the importance of civility and professionalism in the Thunderbird community.
+It is our intention that our repository remains a useful tool for reporting and commenting on bugs, feature requests, and tasks for the QubesMail community. No single contributor's work outweighs the importance of civility and professionalism in the QubesMail community.
 
 In order to keep our repository a useful, inclusive place we have guidelines which, by using this repository, you agree to follow. In addition, your participation on this repository is also subject to the [Mozilla Community Participation Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
 
@@ -10,7 +10,7 @@ Violations of the Code of Conduct or the [Mozilla Community Participation Guidel
 
 ### Commenting
 
-1. **No abusing people**. Constant and intense critique is one of the reasons we build great products. It's harder to fall into group-think if there is always a healthy amount of dissent. We want to encourage vibrant debate inside of the Thunderbird community, we want you to disagree with us, and we want you to effectively argue your case. However, we require that in the process, you criticize things, not people. Examples of things include: interfaces, algorithms, and schedules. Examples of people include: developers, designers, and users. Attacking or encouraging attacks on a person may result in you being banned from this organization.
+1. **No abusing people**. Constant and intense critique is one of the reasons we build great products. It's harder to fall into group-think if there is always a healthy amount of dissent. We want to encourage vibrant debate inside of the QubesMail community, we want you to disagree with us, and we want you to effectively argue your case. However, we require that in the process, you criticize things, not people. Examples of things include: interfaces, algorithms, and schedules. Examples of people include: developers, designers, and users. Attacking or encouraging attacks on a person may result in you being banned from this organization.
 2. **No obligation**. "Open Source" is not the same as "the developers must do my bidding." Everyone here wants to help, but no one else has any obligation to fix the bugs you want fixed. Therefore, you should not act as if you expect someone to fix a bug by a particular date or release. Aggressive or repeated demands will not be received well and will almost certainly diminish the impact of and interest in your suggestions.
 3. **No spam**. Posting comment spam will lead to the ban of your account from our organization.
 4. **No pointless comments**. Limit comments on a bug to information which will help with resolving it. Unless requested, additional "I see this too" or "It works for me" comments are unnecessary. Constructive conversations unrelated to the topic of the bug should go in the appropriate discussion forum.

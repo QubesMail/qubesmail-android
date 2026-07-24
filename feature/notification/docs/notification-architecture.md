@@ -1,4 +1,4 @@
-# Thunderbird for Android Notification System - Architecture deep-dive
+# QubesMail for Android Notification System - Architecture deep-dive
 
 This system is responsible for creating and dispatching all user-facing notifications, including system tray
 notifications and in-app messages.

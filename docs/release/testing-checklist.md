@@ -70,7 +70,7 @@ Top-level verification
 - Backup/Restore
   - Backup 1 account setting, delete account from app, restore from backup; account usable
   - Backup all accounts, uninstall/reinstall, restore settings; accounts usable
-- Settings Import via QR code (only Thunderbird)
+- Settings Import via QR code (only QubesMail)
   - From first-run flow, choose "Import settings"; scan a valid QR; settings are imported/applied or account is added/usable
   - From Settings > Import, choose "Scan QR code"; scan a valid QR; settings are imported/applied or account is added/usable
   - Try an invalid or expired QR; a clear error is shown and the app does not crash

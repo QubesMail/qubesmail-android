@@ -1,6 +1,6 @@
 ## Bolt
 
-[Bolt](https://bolt.thunderbird.net/) is the Thunderbird Compose design system.
+[Bolt](https://bolt.qubesmail.net/) is the QubesMail Compose design system.
 
 ## Background
 
