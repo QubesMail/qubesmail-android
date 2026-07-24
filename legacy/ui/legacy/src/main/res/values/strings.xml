@@ -1151,4 +1151,9 @@ You can keep this message and use it as a backup for your secret key. If you wan
     <string name="debug_invalidate_access_token_already_modified">Stored access token already modified.</string>
     <string name="debug_feature_flags">DEBUG: Feature Flags</string>
     <string name="no_network_message_will_be_sent_later_toast">Offline. Message will be sent once connection is available</string>
+
+    <!-- AI Feature Strings -->
+    <string name="ai_settings_title">AI Settings</string>
+    <string name="ai_settings_summary">Configure threat detection and writing assistant</string>
+    <string name="ai_write_reply">AI: Draft Reply</string>
 </resources>

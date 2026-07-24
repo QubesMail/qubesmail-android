@@ -576,6 +576,13 @@
 
     </PreferenceScreen>
 
+    <Preference
+        android:icon="@drawable/ic_security"
+        android:key="ai_settings"
+        android:title="@string/ai_settings_title"
+        android:summary="@string/ai_settings_summary"
+        />
+
     <PreferenceScreen
         android:icon="@drawable/ic_bug_report"
         android:key="debug_preferences"

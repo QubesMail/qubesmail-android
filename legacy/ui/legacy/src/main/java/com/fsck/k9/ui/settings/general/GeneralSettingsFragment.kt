@@ -86,6 +86,20 @@ class GeneralSettingsFragment : PreferenceFragmentCompat() {
                 true
             }
 
+        findPreference<Preference>("ai_settings")?.onPreferenceClickListener =
+            Preference.OnPreferenceClickListener {
+                try {
+                    val intent = Intent(
+                        context,
+                        Class.forName("net.thunderbird.feature.ai.internal.ui.AiSettingsActivity"),
+                    )
+                    startActivity(intent)
+                } catch (_: ClassNotFoundException) {
+                    // AI feature not available in this build
+                }
+                true
+            }
+
         val listener = Preference.OnPreferenceChangeListener { _, newValue ->
             if (!(newValue as Boolean)) {
                 jobManager.cancelDebugLogLimit()

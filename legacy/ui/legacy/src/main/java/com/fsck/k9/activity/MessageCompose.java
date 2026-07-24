@@ -212,6 +212,7 @@ public class MessageCompose extends BaseActivity implements OnClickListener,
     private static final int REQUEST_MASK_LOADER_HELPER = (1 << 9);
     private static final int REQUEST_MASK_ATTACHMENT_PRESENTER = (1 << 10);
     private static final int REQUEST_MASK_MESSAGE_BUILDER = (1 << 11);
+    private static final int REQUEST_MASK_AI_WRITING = (1 << 12);
 
 
 
@@ -509,6 +510,14 @@ public class MessageCompose extends BaseActivity implements OnClickListener,
 
         if (!identity.getSignatureUse()) {
             signatureView.setVisibility(View.GONE);
+        }
+
+        View aiMagicWandButton = findViewById(R.id.ai_magic_wand_button);
+        if (action == Action.REPLY || action == Action.REPLY_ALL) {
+            aiMagicWandButton.setVisibility(View.VISIBLE);
+            aiMagicWandButton.setOnClickListener(v -> handleAiContinueWriting());
+        } else {
+            aiMagicWandButton.setVisibility(View.GONE);
         }
 
         requestReadReceipt = account.isMessageReadReceipt();
@@ -961,6 +970,21 @@ public class MessageCompose extends BaseActivity implements OnClickListener,
                 return;
             }
 
+            if ((requestCode & REQUEST_MASK_AI_WRITING) == REQUEST_MASK_AI_WRITING) {
+                if (resultCode == RESULT_OK && data != null) {
+                    String aiText = data.getStringExtra("ai_result_text");
+                    boolean isContinueMode = data.getBooleanExtra("ai_is_continue_mode", false);
+                    if (aiText != null) {
+                        if (isContinueMode) {
+                            messageContentView.append((messageContentView.getText().length() > 0 ? " " : "") + aiText);
+                        } else {
+                            messageContentView.append("\n\n" + aiText);
+                        }
+                    }
+                }
+                return;
+            }
+
             if ((requestCode & REQUEST_MASK_RECIPIENT_PRESENTER) == REQUEST_MASK_RECIPIENT_PRESENTER) {
                 requestCode ^= REQUEST_MASK_RECIPIENT_PRESENTER;
                 recipientPresenter.onActivityResult(requestCode, resultCode, data);
@@ -1198,12 +1222,55 @@ public class MessageCompose extends BaseActivity implements OnClickListener,
         } else if (id == R.id.add_attachment) {
             View attachmentMenuAnchor = findViewById(com.fsck.k9.ui.base.R.id.toolbar).findViewById(R.id.add_attachment);
             showPopupMenu(attachmentMenuAnchor);
+        } else if (id == R.id.ai_write_reply) {
+            handleAiWriteReply();
         } else if (id == R.id.read_receipt) {
             onReadReceipt();
         } else {
             return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    private void handleAiWriteReply() {
+        if (currentMessageViewInfo != null && currentMessageViewInfo.message != null) {
+            String subject = currentMessageViewInfo.subject != null ? currentMessageViewInfo.subject : "";
+            com.fsck.k9.mail.Address[] from = currentMessageViewInfo.message.getFrom();
+            String sender = from != null && from.length > 0 ? from[0].getAddress() : "";
+            String body = currentMessageViewInfo.text != null ? currentMessageViewInfo.text : "";
+
+            try {
+                Intent intent = new Intent(this, Class.forName("net.thunderbird.feature.ai.internal.ui.AiWritingAssistantActivity"));
+                intent.putExtra("ai_subject", subject);
+                intent.putExtra("ai_sender", sender);
+                intent.putExtra("ai_body", body);
+                startActivityForResult(intent, REQUEST_MASK_AI_WRITING);
+            } catch (ClassNotFoundException e) {
+                // AI feature not available in this build
+            }
+        }
+    }
+
+    private void handleAiContinueWriting() {
+        if (currentMessageViewInfo != null && currentMessageViewInfo.message != null) {
+            String subject = currentMessageViewInfo.subject != null ? currentMessageViewInfo.subject : "";
+            com.fsck.k9.mail.Address[] from = currentMessageViewInfo.message.getFrom();
+            String sender = from != null && from.length > 0 ? from[0].getAddress() : "";
+            String body = currentMessageViewInfo.text != null ? currentMessageViewInfo.text : "";
+            String currentDraft = messageContentView.getText().toString();
+
+            try {
+                Intent intent = new Intent(this, Class.forName("net.thunderbird.feature.ai.internal.ui.AiWritingAssistantActivity"));
+                intent.putExtra("ai_subject", subject);
+                intent.putExtra("ai_sender", sender);
+                intent.putExtra("ai_body", body);
+                intent.putExtra("ai_is_continue_mode", true);
+                intent.putExtra("ai_current_draft", currentDraft);
+                startActivityForResult(intent, REQUEST_MASK_AI_WRITING);
+            } catch (ClassNotFoundException e) {
+                // AI feature not available in this build
+            }
+        }
     }
 
     @Override

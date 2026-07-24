@@ -53,6 +53,12 @@ the 'message view theme' setting).
 
             </FrameLayout>
 
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/ai_threat_banner_compose_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
             <Space
                 android:id="@+id/line_of_death"
                 android:layout_width="match_parent"

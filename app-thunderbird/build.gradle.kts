@@ -19,7 +19,7 @@ android {
         versionCode = 4
         versionName = "23.0"
 
-        buildConfigField("String", "CLIENT_INFO_APP_NAME", "\"Thunderbird for Android\"")
+        buildConfigField("String", "CLIENT_INFO_APP_NAME", "\"QubesMail for Android\"")
     }
 
     androidResources {

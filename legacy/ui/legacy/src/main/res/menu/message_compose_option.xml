@@ -10,6 +10,12 @@
         app:showAsAction="always"
         />
     <item
+        android:id="@+id/ai_write_reply"
+        android:title="@string/ai_write_reply"
+        android:icon="@drawable/ic_security"
+        app:showAsAction="ifRoom"
+        />
+    <item
         android:id="@+id/send"
         android:title="@string/send_action"
         android:icon="@drawable/ic_send"

@@ -166,6 +166,11 @@ include(
 )
 
 include(
+    ":feature:ai:api",
+    ":feature:ai:internal",
+)
+
+include(
     ":feature:telemetry:api",
     ":feature:telemetry:noop",
     ":feature:telemetry:glean",

@@ -71,6 +71,10 @@ import kotlinx.collections.immutable.toPersistentList
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import net.thunderbird.core.outcome.Outcome
+import net.thunderbird.feature.ai.api.domain.model.AiThreatAnalysis
+import net.thunderbird.feature.ai.api.repository.AiConfigRepository
+import net.thunderbird.feature.ai.api.repository.AnalyzeEmailThreatUseCase
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import net.thunderbird.core.android.account.LegacyAccountDto
@@ -114,6 +118,8 @@ class MessageViewFragment :
     private val appNameProvider: AppNameProvider by inject()
     private val messageReaderViewModel: MessageReaderViewContract.ViewModel<Part> by viewModel()
     private val logger: Logger by inject()
+    private val aiConfigRepository: AiConfigRepository by inject()
+    private val analyzeEmailThreatUseCase: AnalyzeEmailThreatUseCase by inject()
 
     private val createDocumentLauncher: ActivityResultLauncher<CreateDocumentResultContract.Input> =
         registerForActivityResult(CreateDocumentResultContract()) { documentUri ->
@@ -158,6 +164,11 @@ class MessageViewFragment :
 
     // Tracks whether the current Create Document flow is for exporting EML (and not for attachments)
     private var pendingEmlExport: Boolean = false
+
+    // AI threat analysis state
+    private val aiThreatLoadingState = MutableStateFlow(false)
+    private val aiThreatAnalysisState = MutableStateFlow<AiThreatAnalysis?>(null)
+    private val aiThreatErrorState = MutableStateFlow<String?>(null)
 
     private var isActive: Boolean = false
 
@@ -250,6 +261,26 @@ class MessageViewFragment :
                                     onSaveAttachment(item.attachment)
                                 }
                             },
+                        )
+                    }
+                }
+            }
+        }
+
+        val aiThreatBannerView = messageTopView.findViewById<ComposeView>(R.id.ai_threat_banner_compose_view)
+        aiThreatBannerView.apply {
+            setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
+            setContent {
+                val isLoading by aiThreatLoadingState.collectAsState()
+                val analysis by aiThreatAnalysisState.collectAsState()
+                val error by aiThreatErrorState.collectAsState()
+
+                if (isLoading || analysis != null || error != null) {
+                    themeProvider.WithTheme {
+                        net.thunderbird.feature.ai.internal.ui.AiThreatBannerContent(
+                            isLoading = isLoading,
+                            analysis = analysis,
+                            error = error,
                         )
                     }
                 }
@@ -1136,6 +1167,7 @@ class MessageViewFragment :
             showMessage(messageViewInfo)
             preferredUnsubscribeUri = messageViewInfo.preferredUnsubscribeUri
             showProgressThreshold = null
+            triggerAiThreatAnalysis(messageViewInfo)
         }
 
         override fun onMessageViewInfoLoadFailed(messageViewInfo: MessageViewInfo) {
@@ -1219,6 +1251,32 @@ class MessageViewFragment :
 
     private fun invalidateMenu() {
         activity?.invalidateMenu()
+    }
+
+    private fun triggerAiThreatAnalysis(messageViewInfo: MessageViewInfo) {
+        val config = aiConfigRepository.aiConfig.value
+        if (!config.enabled || !config.enableThreatDetection) return
+
+        val subject = messageViewInfo.subject ?: return
+        val sender = messageViewInfo.message?.from?.firstOrNull()?.address ?: return
+        val bodyText = messageViewInfo.text?.take(3000) ?: return
+
+        aiThreatLoadingState.value = true
+        aiThreatAnalysisState.value = null
+        aiThreatErrorState.value = null
+
+        lifecycleScope.launch {
+            when (val result = analyzeEmailThreatUseCase(subject, sender, bodyText)) {
+                is Outcome.Success -> {
+                    aiThreatAnalysisState.value = result.data
+                    aiThreatLoadingState.value = false
+                }
+                is Outcome.Failure -> {
+                    aiThreatErrorState.value = result.error.toString()
+                    aiThreatLoadingState.value = false
+                }
+            }
+        }
     }
 
     companion object {
