@@ -60,4 +60,4 @@ If you want to use a fork of this project please ensure that you replace the OAu
 
 ## License
 
-QubesMail for Android is licensed under the [Apache License, Version 2.0](LICENSE).
+QubesMail for Android is licensed under the [Mozilla Public License Version 2.0](LICENSE).
