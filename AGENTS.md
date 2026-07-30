@@ -89,7 +89,8 @@ Agents MUST NOT change module structure, dependency graphs, or architectural bou
 
 Agents MUST use:
 
-- Kotlin for new code
+- Kotlin for most new code
+- Rust for performance-critical components where appropriate
 - Jetpack Compose for UI (mandatory for new features)
 - Atomic Design system components (see `docs/architecture/design-system.md`)
 - Koin for dependency injection (constructor injection)
@@ -109,7 +110,7 @@ Testing policy:
 - Use Arrange-Act-Assert (AAA) pattern
 - Name the object under test `testSubject`
 
-Agents MUST NOT introduce alternative frameworks.
+Agents MUST NOT introduce alternative frameworks, except for explicitly permitted languages like Rust for performance improvements.
 
 ## Coding Requirements
 
